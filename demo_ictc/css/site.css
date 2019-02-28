@@ -1,0 +1,94 @@
+@font-face
+{
+    font-family: fzlth;
+    src: url(../fonts/fzlthjt.TTF);
+}
+html,body,a{
+	font-family:fzlth;
+	color: rgb(31,31,31);
+}
+
+nav.navbar .navbar-brand img.logo {
+	height: 50px;
+}
+
+.color0{
+	color: rgb(31,31,31);
+}
+.color1{
+	color: #68c0ff;
+}
+.color2{
+	color: #478afa;
+}
+
+.bg-color1{
+	background-color: #f6f7f9;
+}
+
+.p_title {
+	font-size: 3.6rem;
+	font-weight: normal;
+	text-align: center;
+	margin: 40px 0px 31px;
+	letter-spacing: 4px;
+}
+
+.p_content {
+	font-size: 1.8rem;
+	line-height: 36px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.p_title_2{
+	font-size: 2.4rem;
+	text-align: center;
+	margin: 12px 0px;
+	letter-spacing: 2px;
+}
+
+.p_title_3{
+	font-size: 2rem;
+	text-align: center;
+	line-height: 40px;
+	margin: 20px 0px 5px;
+	letter-spacing: 0px;
+}
+
+footer{
+	background-color: #072859; 
+	padding: 15px; 
+	color: white;
+}
+footer ul{
+	list-style: none;
+	margin: 0;
+}
+
+footer ul li{
+	font-size: 1.2rem;
+	line-height: 20px;
+}
+
+footer ul li.title {
+	font-size: 1.6rem;
+	line-height: 32px;
+}
+
+/*.side-bar a,.chat-tips i {background: url(../img/bg/right_bg.png) no-repeat;}*/
+.side-bar {width: 66px;position: fixed;bottom: 40px;right: 5%;font-size: 0;line-height: 0;z-index: 100;}
+.side-bar a {width: 50px;height: 50px;display: inline-block;background-color: #072859;margin-bottom: 10px;}
+.side-bar a:hover {background-color: #669fdd;}
+.side-bar .icon-weibo {background-image: url(../img/icon/weibo.png);}
+.side-bar .icon-chat {background-image: url(../img/icon/wechat.png);}
+.side-bar .icon-chat:hover .chat-tips {display: block; background-color: #669fdd;}
+/*.side-bar .icon-blog {background-position: 0 -198px;}*/
+.side-bar .icon-contact {background-image: url(../img/icon/contact.png);}
+/*.side-bar .icon-totop {background-position: 0 -334px;}*/
+.side-bar .icon-back-to-top{background-image: url(../img/icon/narrow.png);background-color: #e67b11;}
+.chat-tips {border: 1px solid #d1d2d6;position: absolute;right: 78px;top: 0px;display: none;}
+/*.chat-tips i {width: 9px;height: 16px;display: inline-block;position: absolute;right: -9px;top: 80px;background-position:-88px -350px;}*/
+.chat-tips img {width: 138px;height: 138px;}
+
+.icon-chat .icon-weibo .icon-back-to-top .icon-contact{border-radius: 10px;}

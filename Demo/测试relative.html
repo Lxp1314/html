@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box1{
+				width: 100px;
+				height: 100px;
+				background: rgba(0,0,0,.5);
+				margin-top: 5px;
+			}
+			.box2{
+				width: 100px;
+				height: 50px;
+				background: rgba(0,255,0,.5);
+				/*position: relative;
+				z-index: 1;
+				top:-5px;*/
+				z-index: 1;
+			}
+			.box3{
+				width: 100px;
+				height: 50px;
+				background: rgba(0,0,255,.5);
+				position: relative;
+				top:0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			
+		</div>
+		<div class="box1">
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link href="css/swiper.min.css" rel="stylesheet" />
+		<link href="css/site.css" rel="stylesheet" />
+		<style type="text/css">
+			a:hover,
+			a:focus {
+				outline: none;
+				text-decoration: none;
+			}
+			
+			.tab .nav-tabs {
+				padding-top: 15px;
+				padding-bottom: 40px;
+				/*position: relative;
+				border-bottom: none;*/
+				border: none;
+			}
+			
+			.tab .nav-tabs li {
+				text-align: center;
+				width: 100%;
+				margin: 5px 0px;
+				/*margin-right: 10px;*/
+			}
+			
+			.tab .nav-tabs li a {
+				display: block;
+				font-size: 2.4rem;
+				font-weight: 500;
+				padding: 10px 15px;
+				border: none;
+				overflow: hidden;
+				z-index: 1;
+				letter-spacing: 2px;
+			}
+			
+			.tab .nav-tabs li a:before {
+				content: "";
+				width: 100%;
+				float: none;
+				
+				/*height: 3px;*/
+				/*background: #de7921;*/
+				/*position: absolute;*/
+				/*top: 92%;*/
+				/*left: 0;*/
+				/*transition: all 0.3s ease 0s;*/
+			}
+			
+			.tab .nav-tabs li a:hover:before,
+			.tab .nav-tabs li.active a:before,
+			.tab .nav-tabs li.active a:hover:before {
+				top: 0;
+			}
+			
+			.tab .nav-tabs li a:after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				/*background: #fff;*/
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: -1;
+				/*transition: all 0.3s ease 0s;*/
+				border: 3px solid #478afa;
+				border-radius: 10px;
+			}
+			
+			.tab .nav-tabs li a:hover:after,
+			.tab .nav-tabs li.active a:after,
+			.tab .nav-tabs li.active a:hover:after {
+				top: 0;
+				/*border-radius: 10px #478afa;*/
+				background-color: #F9F9F9;
+			}
+			
+			.nav-tabs li.active a,
+			.nav-tabs li.active a:focus,
+			.nav-tabs li.active a:hover,
+			.nav-tabs li a:hover {
+				border: none;
+			}
+			
+			.tab .tab-content {
+				padding: 30px 15px 20px;
+				/*background: #fff;*/
+				font-size: 14px;
+				color: #555;
+				line-height: 26px;
+			}
+			
+			.tab .tab-content h3 {
+				font-size: 24px;
+				margin-top: 0;
+			}
+			
+			.nav-tabs>li.active>a,
+			.nav-tabs>li.active>a:hover,
+			.nav-tabs>li.active>a:focus {
+				background-color: transparent;
+			}
+			
+			.swiper-container {
+			    width: 100%;
+			    padding-top: 40px;
+			    padding-bottom: 40px;
+			}
+			.swiper-slide {
+			    background-position: center;
+			    background-size: cover;
+			    width: 960px;
+			    height: 522px;
+			    /*animation: aa 0.6s forwards;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Start Navigation -->
+		<nav class="navbar navbar-default navbar-abs bootsnav">
+			<div class="container-bg">
+				<div class="container">
+					<!-- Start Header Navigation -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="#brand"><img src="img/logo.png" class="logo" alt=""></a>
+					</div>
+					<!-- End Header Navigation -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">关于信唐</a>
+								<ul class="dropdown-menu">
+                                    <li><a href="honors.html">资质荣誉</a></li>
+                                    <li><a href="about.html">关于我们</a></li>
+                                    <li>
+										<a href="gongyi.html">公益</a>
+									</li>
+                               </ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">产品与服务</a>
+								<ul class="dropdown-menu">
+                                    <li><a href="smartCity.html">智慧城市</a></li>
+                                    <li><a href="gBigData.html">政府大数据</a></li>
+                                    <li><a href="superCase.html">经典案例</a></li>
+                               </ul>
+							</li>
+							<li>
+								<a href="employment.html">招纳贤士</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<img src="img/banner_employment.jpg" width="100%" />
+		</div>
+
+		<div class="container tab bg-color1" role="tabpanel" style="margin: 40px auto; padding:0px 60px 40px;">
+			<div class="row" style="border-bottom: solid 1px black;">
+				<p class="p_title color2" >
+					招纳人才
+				</p>
+			</div>
+			<div class="row">
+				<!-- Nav tabs -->
+				<div class="col-md-3" style="border-right: 1px solid black; padding-left: 0px;">
+
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation">
+							<a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">
+								项目经理
+							</a>
+						</li>
+						<li role="presentation">
+							<a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">
+								技术研发工程师
+							</a>
+						</li>
+						<li role="presentation">
+							<a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">
+								java开发工程师
+							</a>
+						</li>
+						<li role="presentation">
+							<a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">
+								网页前端开发工程师
+							</a>
+						</li>
+						<li role="presentation">
+							<a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">
+								UI设计师
+							</a>
+						</li>
+						<li role="presentation">
+							<a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">
+								Android开发工程师
+							</a>
+						</li>
+						<li role="presentation">
+							<a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">
+								IOS开发工程师
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- Tab panes -->
+				<div class="col-md-9">
+
+					<div class="tab-content tabs">
+						<!--一安全生产大数据-->
+						<div role="tabpanel" class="tab-pane fade in active" id="Section1">
+							<div class="" style="margin-bottom: 10px;">
+								<p class="p_title_2 color1" style="text-align: left;">招聘职位</p>
+								<p class="p_content">性别：不限 | 驾照：不要求
+岗位职责:
+ 入职要求：
+1、应往届毕业生，大专以上学历，对IT计算机行业感兴趣，有志于在IT行业发展
+岗位职责： 负责项目的研发！（可在项目经理的带领下共同完成） 
+任职资格： 1、大专以上学历（能力突出可降低至高中或者中专），年龄在18-30岁之间。
+ 2、对计算机行业感兴趣，专业不限，基础不限、热爱互联网工作（非销售、非保险岗位）；
+ 3、渴望能有一项扎实的技术、获得一份有长远发展、稳定、有晋升空间的工作；
+ 4、学习能力强，工作热情高，富有责任感，工作认真、细致、敬业，责任心强；
+ 我们不需要你有多扎实的技术，甚至你可以没接触过IT行业，只要你看好IT行业的发展前景，并且想在IT行业里一展宏图，我们愿意培养你，我们将对新入职员工进行企业文化、团队合作能力、技能等入职内训，新入职人员有优秀员工带领，并且公司提供全方位的办公环境和设施设备，能力居上者有广阔的晋升位置。欢迎应届生大学生、对IT互联网有兴趣想往IT互联网行业发展、转行、自信心不足、技术不够的伙伴，我们期待你的加入。</p>
+							</div>
+							
+
+						</div>
+						<!--二宏观经济大数据-->
+						<div role="tabpanel" class="tab-pane fade" id="Section2">
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+						</div>
+						<!--三其他领域-->
+						<div role="tabpanel" class="tab-pane fade" id="Section3">
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+							<div class="" style="margin-bottom: 10px;">
+								<h4 style="color: #478afa;">招聘职位</h4>
+								<h5 style="line-height: 20px;">招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述招聘职位详述
+											</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="bg-color1" style="overflow: hidden; padding-bottom: 40px;">
+			<p class="p_title color2">联系我们</p>
+			<div class="swiper-container" style="margin-top: -30px;">
+				<div class="swiper-wrapper">
+					<!--<div class="swiper-slide" ></div>-->
+					<div class="swiper-slide" style="background-image:url(img/map_beijing.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(img/map_tianjin.jpg)"></div>
+				</div>
+				<div class="swiper-button-prev"></div>
+		    	<div class="swiper-button-next"></div>
+			</div>
+			<ul style="list-style: none; margin-left: 40%; font-size: 1.2em;">
+				<li>地址：北京市海淀区知春路甲48号盈都大厦B座20层</li>
+				<li>电话：（010）5873 1219</li>
+				<li>热线：4008045108</li>
+				<li>邮箱：service@info-itic.com.cn</li>
+				<li>邮编：100086</li>	
+			</ul>
+			
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1">
+						<ul>
+							<li class="title">联系我们</li>
+							<li>地址：北京市海淀区知春路甲48号盈都大厦B座20层</li>
+							<li>电话：（010）5873 1219</li>
+							<li>热线：4008045108</li>
+							<li>邮箱：service@info-itic.com.cn</li>
+							<li>邮编：100086</li>
+
+						</ul>
+					</div>
+					<div class="col-md-5 col-md-offset-1">
+						<ul>
+							<li class="title">版权信息</li>
+							<li>http://www.info-itic.com.cn</li>
+							<li>京公网安备11010802011386号</li>
+							<li>京ICP备13039065号</li>
+							<li>Copyright 2013 ITIC , All Rights Reserved</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--描述：侧边浮动栏 返回顶部-->
+		<div class="side-bar visible-lg">
+			<a href="#" class="icon-chat" style="border-radius: 10px;">微信
+				<div class="chat-tips">
+					<!--<i>微信订阅号</i>-->
+					<img src="img/icon/qrcode_wechat.jpg" alt="微信订阅号">
+				</div>
+			</a>
+			<a href="#" class="icon-weibo" style="border-radius: 10px; display: none;">weibo</a>
+			<a href="#" class="icon-contact" style="border-radius: 10px;">mail</a>
+			<a href="#" class="icon-back-to-top" style="border-radius: 10px;"> </a>
+		</div>
+
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+//				initialSlide: 1,
+				slidesPerView: 'auto',
+				prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',
+				coverflow: {
+					rotate: 50,
+					stretch: 0,
+					depth: 100,
+					modifier: 1,
+					slideShadows: true
+				}
+			});
+			//返回顶部
+			$(document).ready(function() {
+				var $backToTop = $(".icon-back-to-top");
+				/* 隐藏回顶部按钮					  $backToTop.hide(); */
+				//					$backToTop.hide();
+				//					$(window).on('scroll', function() {
+				//						if($(this).scrollTop() > 100) { //返回顶部按钮将在用户向下滚动100像素后出现
+				//							$backToTop.fadeIn(1000);
+				//						} else {
+				//							$backToTop.fadeOut(1000);
+				//						}
+				//					});
+				$backToTop.on('click', function(e) {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 500);
+					//						$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); // 这行是 Opera 的补丁, 少了它 Opera 是直接用跳的而且画面闪烁 by willin
+					//						$body.animate({
+					//							scrollTop: 0
+					//						}, 1000);
+					return false; // 返回false可以避免在原链接后加上#
+				});
+			});
+		</script>
+	</body>
+
+</html>

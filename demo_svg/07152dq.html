@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background: #fff;
+				font-family: "Oswald", sans-serif;
+			}
+			
+			.chart {
+				position: absolute;
+				width: 795px;
+				height: 795px;
+				top: 80px;
+				left: 50%;
+				margin: 0 0 0 -398px;
+				border: solid 1px red;
+			}
+			g{ cursor: pointer;}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="doughnut" class="chart"></div>
+		<script src="jquery.min.js"></script>
+		<script>
+			function doughnut(container, data){
+				
+			}
+			$(function(){
+				var $container = $("#doughnut");
+				var data = 
+				[
+					{
+						id: 1,
+						title: "政府大数据业务领域",
+						value: 15,
+						color: "#38b7a5",
+						data: [
+							{
+								id: 11,
+								title: "中科软大数据平台",
+								value: 2,
+								color: "#68d8a5",
+//								data: [
+//									{
+//										title: "安全生产大数据",
+//										value: 1,
+//										color: "#96c16b"
+//									}
+//								]
+							},
+							{
+								id: 12,
+								title: "平台特点",
+								value: 1,
+								color: "#68d8a5"
+							},
+							{
+								id: 13,
+								title: "行业应用",
+								value: 4,
+								color: "#68d8a5",
+								data: [
+									{
+										id: 131,
+										title: "安全生产大数据",
+										value: 1,
+										color: "#96c16b"
+									},
+									{
+										id: 132,
+										title: "区域宏观经济大数据",
+										value: 1,
+										color: "#d1db75"
+									},
+									{
+										id: 133,
+										title: "其他领域",
+										value: 1,
+										color: "#d8cc75"
+									}
+								]
+							}
+						]
+					},
+					{
+						id: 2,
+						title: "政府城市业务领域",
+						value: 21,
+						color: "#1172bc",
+						data: [
+							{
+								id: 21,
+								title: "智慧民政",
+								value: 1,
+								color: "#afd1dd"
+							},
+							{
+								id: 22,
+								title: "智慧网信",
+								value: 1,
+								color: "#afd1dd"
+							},
+							{
+								id: 23,
+								title: "智慧公交",
+								value: 1,
+								color: "#afd1dd"
+							},
+							{
+								id: 24,
+								title: "智慧安监",
+								value: 1,
+								color: "#afd1dd"
+							},
+							{
+								id: 25,
+								title: "智慧民生",
+								value: 1,
+								color: "#afd1dd"
+							},
+							{
+								id: 26,
+								title: "智慧城管",
+								value: 1,
+								color: "#afd1dd"
+							}
+						]
+					}
+				];
+				var W = $container.width(),
+					H = $container.height(),
+					centerX = W/2,
+					centerY = H/2,
+					cos = Math.cos,
+					sin = Math.sin,
+					PI = Math.PI,
+					imgPath = "img/diqiu.png",
+					settings = {
+							segmentShowStroke: true,
+							segmentStrokeColor: "#fff",
+							segmentStrokeWidth: 1,
+							gapOffset: 2,
+							hasGap: 1,
+							edgeOffset: 10, //offset from edge of $this
+							levelTotal:3,
+							doughnutThickness: W / 2 * 0.5 / 3,
+//							animation: true,
+//							animationSteps: 90,
+//							animationEasing: "easeInOutExpo",
+//							animateRotate: true,
+//							tipOffsetX: -8,
+//							tipOffsetY: -45,
+//							tipClass: "doughnutTip",
+//							summaryClass: "doughnutSummary",
+//							summaryTitle: "TOTAL:",
+//							summaryTitleClass: "doughnutSummaryTitle",
+//							summaryNumberClass: "doughnutSummaryNumber",
+							beforeDraw: function() {},
+							afterDrawed: function() {},
+							onPathEnter: function(e, data) {},
+							onPathLeave: function(e, data) {}
+					};
+					
+				var $svg = $('<svg width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H 
+				+ '" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>').appendTo($container);
+				
+//				var $defs = $(document.createElementNS('http://www.w3.org/2000/svg', 'defs'));
+				var $defs = $(document.createElementNS('', 'defs')).appendTo($svg);
+//				var $pattern = $(document.createElementNS('', 'pattern'));
+//					$pattern.attr({
+//						id: "image",
+//						x: "0%",
+//						y: "0%",
+//						height: "100%",
+//						width: "100%",
+//						viewBox: "0 0 286 309"
+//					}).appendTo($defs);
+					
+//				$image = $(document.createElementNS('', 'image'));
+//				$image.attr({
+//					x: "0%",
+//					y: "0%",
+//					height: "309",
+//					width: "286",
+//				});
+//				$image.attr("xlink:href", "img/diqiu.png").appendTo($svg);
+
+
+
+				var $image=document.createElementNS('http://www.w3.org/2000/svg','image'); 
+				var a = Min([H, W]) - settings.edgeOffset*2 - settings.doughnutThickness * settings.levelTotal *2;
+$image.setAttribute("x",centerX-a/2); 
+$image.setAttribute("y",centerY-a/2); 
+
+$image.setAttribute("width",a); 
+$image.setAttribute("height",a); 
+$image.href.baseVal = "img/diqiu.png"; //关键一句，设置image的url图片，要用image.href.baseVal
+$svg.append($image);
+
+//				var pic = svgDocument.createElement("image"); 
+//$svg.appendChild(pic);
+//pic.setAttribute("x", 10);  
+//pic.setAttribute("y", 10);  
+//pic.setAttribute("height", 100);  
+//pic.setAttribute("width", 100);   
+//pic.setAttributeNS("http://www.w3.org/1999/xlink", "href", 'img/diqiu.png');   
+				
+//				var $circle = $(document.createElementNS('', 'circle'));
+//				$circle.attr({
+//					cx: "50%",
+//					cy: "50%",
+//					r : "20%",
+//					fill: "url(#image)",
+//					stroke : "lightblue"
+//				}).appendTo($svg);
+//SVGDocument
+				
+				drawPath(data, 1, -PI / 2, PI * 2);
+				
+				function drawPath(data,level,startAngle,totalAngle){
+					
+					var doughnutRadius = Min([H / 2, W / 2]) - settings.edgeOffset - settings.doughnutThickness * Math.abs(level - settings.levelTotal),//圆环最内环半径（包括最内圆环）
+						cutoutRadius = doughnutRadius - settings.doughnutThickness,//圆环最内环半径（不包括最内圆环）
+						textRadius = doughnutRadius - settings.doughnutThickness/2 - 7;//圆环文字坐标
+						
+					var segmentTotal = 0;
+					var startRadius = startAngle;
+					for(var i = 0, len = data.length; i < len; i++) {
+						segmentTotal += data[i].value;
+	//						.on("mouseenter", pathMouseEnter)
+	//						.on("mouseleave", pathMouseLeave)
+	//						.on("mousemove", pathMouseMove);
+					}
+					
+					
+					
+					for(var i = 0, len = data.length; i < len; i++) {
+						var segmentAngle = (data[i].value / segmentTotal) * (totalAngle),
+							endRadius = startRadius + segmentAngle,
+							largeArc = ((endRadius - startRadius) % (totalAngle)) > PI ? 1 : 0,
+							startX = centerX + cos(startRadius) * doughnutRadius,
+							startY = centerY + sin(startRadius) * doughnutRadius,
+							endX2 = centerX + cos(startRadius) * cutoutRadius,
+							endY2 = centerY + sin(startRadius) * cutoutRadius,
+							endX = centerX + cos(endRadius) * doughnutRadius,
+							endY = centerY + sin(endRadius) * doughnutRadius,
+							startX2 = centerX + cos(endRadius) * cutoutRadius,
+							startY2 = centerY + sin(endRadius) * cutoutRadius,
+							
+							tX = centerX + cos(startRadius) * textRadius,//tX,tY,tX2,tY2： 绘制文字的path
+							tY = centerY + sin(startRadius) * textRadius,
+							tX2 = centerX + cos(endRadius) * textRadius,
+							tY2 = centerY + sin(endRadius) * textRadius;
+							
+						var cmd = [
+							'M', startX, startY, //Move pointer
+							'A', doughnutRadius, doughnutRadius, 0, largeArc, 1, endX, endY, //Draw outer arc path
+							'L', startX2, startY2, //Draw line path(this line connects outer and innner arc paths)
+							'A', cutoutRadius, cutoutRadius, 0, largeArc, 0, endX2, endY2, //Draw inner arc path
+							'Z' //Cloth path
+						];
+						
+						var $g = $(document.createElementNS('http://www.w3.org/2000/svg', 'g')).attr({
+								"id": "g" + data[i].id
+							}).appendTo($svg);
+						
+						//文字路径
+						var textPath = [
+							'M', tX, tY,
+							'A', textRadius, textRadius, 0, largeArc, 1,  tX2, tY2
+						];
+						
+						$(document.createElementNS('http://www.w3.org/2000/svg', 'path'))
+							.attr({
+								"id": "tp" + data[i].id,
+								"d": textPath.join(' ')
+							})
+							.appendTo($defs);
+						
+						$(document.createElementNS('http://www.w3.org/2000/svg', 'path'))
+							.attr({
+								"stroke-width": settings.segmentStrokeWidth,
+								"stroke": settings.segmentStrokeColor,
+								"fill": data[i].color,
+								"data-order": i,
+								"d": cmd.join(' '),
+								"data-value": data[i].value
+							})
+							.appendTo($g);
+						
+						//文字
+						var $text = $(document.createElementNS('http://www.w3.org/2000/svg', 'text')).appendTo($g);
+						var $textPath = $(document.createElementNS('http://www.w3.org/2000/svg', 'textPath'));
+//							.attr({
+//								"text-anchor": "middle",
+//								"startOffset": "50%",
+////								"ng-attrs-xlink:href": "#tp"+data[i].id
+//							});
+						$textPath[0].setAttribute("text-anchor","middle");
+						$textPath[0].setAttribute("startOffset","50%");
+						$textPath[0].href.baseVal = "#tp"+data[i].id;
+//						$textPath.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#tp"+data[i].id );
+						$textPath.appendTo($text);
+						
+						$textPath.append(data[i].title);
+						
+						//$paths[i].attr("d", cmd.join(' '));
+						$g.on("mouseenter",function(){
+//								$this = this;
+								this.setAttribute("fill-opacity","0.5");
+								//alert(this.getAttribute("data-value"));
+//								alert($(this))
+							}).on("mouseleave",function(){
+								this.removeAttribute("fill-opacity");
+							}).on("click",function(){
+								alert(this.id);
+							});
+						
+						if(typeof(data[i].data)!="undefined"){
+							drawPath(data[i].data, level + 1, startRadius, segmentAngle);
+						}
+						startRadius += segmentAngle;
+					}
+				}
+				
+				function Max(arr) {
+					return Math.max.apply(null, arr);
+				}
+
+				function Min(arr) {
+					return Math.min.apply(null, arr);
+				}
+
+				function isNumber(n) {
+					return !isNaN(parseFloat(n)) && isFinite(n);
+				}
+			});
+		</script>
+	</body>
+
+</html>

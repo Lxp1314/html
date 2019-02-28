@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				background: deepskyblue;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<style type="text/css">
+			#outDiv {
+				width: 100px;
+				height: 100px;
+				margin: 0 auto;
+				background: #ff0;
+				/*overflow: hidden;*/
+			}
+			
+			#innerDiv {
+				width: 400%;
+				height: 100px;
+				background: rgba(0, 255, 255, 0.5)
+			}
+			
+			#innerDiv img {
+				width: 25%;
+				height: 100px;
+				position: relative;
+			}
+		</style>
+		<div id="outDiv">
+			<div id="innerDiv">
+				<img src="img/pic_002.jpg"><img src="img/pic_003.jpg"><img src="img/pic_004.jpg"><img src="img/pic_005.jpg">
+			</div>
+		</div>
+		<div style="text-align: center;">
+			<button onclick="moveLeft()">←</button>
+			<button onclick="moveRight()">→</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		var children;
+		var count;
+		var cur = 0; //当前显示
+		var pre = 0;
+		var width;
+		var moving = false;
+		$(document).ready(function() {
+			children = $("#innerDiv").children("img");
+			count = children.length;
+			width = $(children[0]).width();
+		});
+
+		function moveRight() {
+			if (!moving) {
+				moving = true;
+				pre = cur;
+				cur++;
+				if (cur == count) {
+					cur = 0;
+				}
+				$(children[cur]).css("left", -width * (cur - 1));
+				$(children[pre]).animate({
+					left: '+=' + (-width) + 'px'
+				});
+				$(children[cur]).animate({
+					left: '+=' + (-width) + 'px'
+				}, function() {
+					moving = false;
+				});
+			}
+		}
+
+		function moveLeft() {
+			if (!moving) {
+				moving = true;
+				pre = cur;
+				cur--;
+				if (cur < 0) {
+					cur = count - 1;
+				}
+				$(children[cur]).css("left", -width * (cur + 1));
+				$(children[pre]).animate({
+					left: '+=' + (width) + 'px'
+				});
+				$(children[cur]).animate({
+					left: '+=' + (width) + 'px'
+				}, function() {
+					moving = false;
+				});
+			}
+		}
+	</script>
+
+</html>

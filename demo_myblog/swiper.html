@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>首页</title>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="swiper/swiper-3.4.0.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/home.css" />
+	</head>
+
+	<body>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default navbar-home navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+					<a class="navbar-brand" href="#">H5TML</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#about">关于我们</a>
+						</li>
+						<li>
+							<a href="#contact">联系我们</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Nav header</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Default</a>
+						</li>
+						<li>
+							<a href="#">Static top</a>
+						</li>
+						<li class="active">
+							<a href="#">Fixed top</a>
+						</li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+		<div id="banner">
+			<a class="arrow-left" href="#"></a>
+			<a class="arrow-right" href="#"></a>
+			<div class="swiper-container swiper-container-horizontal" id="bannerSwiper" style="cursor: -webkit-grab;">
+				<div class="swiper-wrapper" style="transform: translate3d(-2400px, 0px, 0px); transition-duration: 0ms;">
+					<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" id="swiper-slide2" data-swiper-slide-index="1" style="width: 1200px;">
+						<div class="inner">
+							<dl>
+								<dt data-swiper-parallax="-500" style="transform: translate3d(-500px, 0px, 0px); transition-duration: 0ms;">为什么大家都选择使用Swiper？</dt>
+								<dd style="margin-top: 50px; transform: translate3d(-1500px, 0px, 0px); transition-duration: 0ms;" data-swiper-parallax="-1500"> 免费，开源，稳定，应用广泛 </dd>
+								<dd data-swiper-parallax="-3000" style="transform: translate3d(-3000px, 0px, 0px); transition-duration: 0ms;"> 可单独使用无需jQuery，亦可结合jQuery </dd>
+								<dd data-swiper-parallax="-4500" style="transform: translate3d(-4500px, 0px, 0px); transition-duration: 0ms;"> 简单配置即可实现手机、平板网站大部分触摸功能 </dd>
+								<dd data-swiper-parallax="-6000" style="transform: translate3d(-6000px, 0px, 0px); transition-duration: 0ms;"> 包括焦点图，tab，触摸滑动导航等 </dd>
+								<dd data-swiper-parallax="-7500" style="transform: translate3d(-7500px, 0px, 0px); transition-duration: 0ms;"> 文档丰富，大量活跃用户解答疑问 </dd>
+							</dl>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" id="swiper-slide1" data-swiper-slide-index="0" style="width: 1200px;">
+						<div class="inner">
+							<div id="mainTheme">
+								<h1>Swiper</h1><span>3</span></div>
+							<p data-swiper-parallax="-1500" style="transform: translate3d(-1500px, 0px, 0px); transition-duration: 0ms;">开源、免费、强大的移动端触摸滑动插件</p>
+							<div class="subbtn" data-swiper-parallax="-3000" style="transform: translate3d(-3000px, 0px, 0px); transition-duration: 0ms;">
+								<a class="button" href="/demo/index.html">查看Swiper演示</a>
+								<a class="button" href="/api/index.html">查看API 文档</a>
+								<a class="button" href="http://bbs.swiper.com.cn" target="_blank">交流、分享Swiper</a>
+								<a class="button" href="http://swiper2.swiper.com.cn" target="_blank">回顾Swiper2</a>
+							</div>
+							<div class="mainbtn" data-swiper-parallax="-4500" style="transform: translate3d(-4500px, 0px, 0px); transition-duration: 0ms;">
+								<a href="/usage/index.html">开始使用 Swiper</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-active" id="swiper-slide2" data-swiper-slide-index="1" style="width: 1200px;">
+						<div class="inner">
+							<dl>
+								<dt data-swiper-parallax="-500" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">为什么大家都选择使用Swiper？</dt>
+								<dd style="margin-top: 50px; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;" data-swiper-parallax="-1500"> 免费，开源，稳定，应用广泛 </dd>
+								<dd data-swiper-parallax="-3000" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"> 可单独使用无需jQuery，亦可结合jQuery </dd>
+								<dd data-swiper-parallax="-4500" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"> 简单配置即可实现手机、平板网站大部分触摸功能 </dd>
+								<dd data-swiper-parallax="-6000" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"> 包括焦点图，tab，触摸滑动导航等 </dd>
+								<dd data-swiper-parallax="-7500" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"> 文档丰富，大量活跃用户解答疑问 </dd>
+							</dl>
+						</div>
+					</div>
+					<div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" id="swiper-slide1" data-swiper-slide-index="0" style="width: 1200px;">
+						<div class="inner">
+							<div id="mainTheme">
+								<h1>Swiper</h1><span>3</span></div>
+							<p data-swiper-parallax="-1500" style="transform: translate3d(1500px, 0px, 0px); transition-duration: 0ms;">开源、免费、强大的移动端触摸滑动插件</p>
+							<div class="subbtn" data-swiper-parallax="-3000" style="transform: translate3d(3000px, 0px, 0px); transition-duration: 0ms;">
+								<a class="button" href="/demo/index.html">查看Swiper演示</a>
+								<a class="button" href="/api/index.html">查看API 文档</a>
+								<a class="button" href="http://bbs.swiper.com.cn" target="_blank">交流、分享Swiper</a>
+								<a class="button" href="http://swiper2.swiper.com.cn" target="_blank">回顾Swiper2</a>
+							</div>
+							<div class="mainbtn" data-swiper-parallax="-4500" style="transform: translate3d(4500px, 0px, 0px); transition-duration: 0ms;">
+								<a href="/usage/index.html">开始使用 Swiper</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bannerpagination" class="pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+		</div>
+		<div class="alert alert-success">
+      		<i class="fa fa-check-circle"></i> 
+      		1111111
+			<button type="button" class="close" data-dismiss="alert">×</button>
+      	</div>
+      	<div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="swiper/swiper-3.4.0.jquery.min.js"></script>
+		
+<script>
+
+	var mySwiper = new Swiper('#bannerSwiper',{
+    loop: true,
+	autoplay:5000,
+	speed:1000,
+	pagination: '#bannerpagination',
+	paginationClickable: true,
+	grabCursor : true,
+	nextButton: '.arrow-right',
+    prevButton: '.arrow-left',
+	parallax:true,
+  });  
+
+ 
+
+
+</script>
+	</body>
+
+</html>

@@ -1,0 +1,38 @@
+@charset "utf-8";
+*{padding:0;margin:0;outline:none}
+body{font-family:'Microsoft Yahei','Simsun';font-size:18px;color:#333;background:#ebebeb;-webkit-text-size-adjust:none; min-width:310px;min-height:540px;overflow-x:hidden;}
+ul li{list-style:none}
+img{border:none;vertical-align:middle}
+a{color:#333;text-decoration:none;-webkit-touch-callout:none}
+i,em{font-style:normal}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {width:10px;}
+/* 滚动槽 */
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.3);}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {background:rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb:window-inactive {background: rgba(255,0,0,0.4);}
+/*slider*/
+#slideShow{position:relative;width:100%;max-width:640px;overflow:hidden;margin:0 auto}
+#scrollUl{position:absolute;overflow:hidden;left:0;top:0;-webkit-transition:left 0.5s;font-size:16px}
+#scrollUl li{float:left;position:relative}
+#scrollUl li img{width:100%;max-width:640px;height:auto;display:block}
+#scrollUl li p{height:40px;line-height:40px;position:absolute;bottom:0;width:100%;color:#fff;background:rgba(0,0,0,0.6);padding:0 70px 0 10px;overflow:hidden;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+#indicator{overflow:hidden;position:absolute;bottom:15px;right:4px;z-index:10}
+#indicator li{float:left;width:10px;height:10px;margin-right:6px;background:#fff;border-radius:100%;cursor:pointer}
+#indicator li.active{background:#738abe}
+/*container*/
+.container{max-width:620px;margin:0 auto;padding:15px 10px 0}
+/*footer*/
+footer{font-size:14px;color:#666;text-align:center;height:40px;padding-top:12px}
+footer a{color:#666}
+/*更多按钮*/
+.moreInfo1{height:40px;line-height:40px;margin-top:15px;border-radius:5px;box-shadow:0 0 5px rgba(0,0,0,0.2);text-align:center;background:-webkit-linear-gradient(top,#fff,#f2f2f2);background:-ms-linear-gradient(top,#fff,#f2f2f2);background:-moz-linear-gradient(top,#fff,#f2f2f2);font-size:16px} 
+.moreInfo1 a{display:block}
+.moreInfo2{height:40px;line-height:40px;margin-top:5px;text-align:center;background:#ccc;font-size:16px}
+.moreInfo2 a{display:block}
+
+
+/**********************audio***********************/
+.btn_music{display:inline-block;width:35px;height:35px;background:url('../images/play.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;left:15px;top:20px;}
+.btn_music.on{background-image:url('../images/stop.png');}

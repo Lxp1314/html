@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-widtn,initial-scale=1.0">
+		<title>抢红包-抢光页</title>
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+		<img src="img/grab_empty.jpg" width="100%">
+		<div class="container">
+			<button>点我发现更多惊喜</button>
+			<style>
+				.divbtn {
+					width: 250px;
+					height: 40px;
+					border-radius: 20px;
+					line-height: 40px;
+					text-align: center;
+					border: solid 1px red;
+					margin-top: 5px;
+					color: red;
+				}
+				.divbtn:hover {
+					border: solid 1px green;
+					color: green;
+				}
+				.divbtn:active {
+					border: solid 1px blue;
+					color: blue;
+				}
+			</style>
+			<div class="divbtn">点我发现更多惊喜</div>
+			<footer onclick="gshow()">@智慧商场</footer>
+		</div>
+		<div id="pop_grab" class="pop_grab" style="display: none;">
+			<div id="grab_content" class="grab_content" style="display: none;">
+				<div id="grab_close" class="grab_close" onclick="gclose()">X</div>
+				<p class="grab_title">智慧商场官方客服：</p>
+				<p class="grab_tel">电话：010-59505091&nbsp;&nbsp;<span><img src="img/telephone@2x.png" height="12"></span></p>
+				<p class="grab_qq">QQ：2069392900</p>
+				<p class="grab_time">工作时间：
+					<br>周一至周日&nbsp;9:00-21:00</p>
+				<p class="grab_No">NO：100001</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function gshow() {
+				document.getElementById("grab_content").style.display = "block";
+				document.getElementById("pop_grab").style.display = "block";
+			}
+
+			function gclose() {
+				document.getElementById("grab_content").style.display = "none";
+				document.getElementById("pop_grab").style.display = "none";
+			}
+		</script>
+	</body>
+
+</html>

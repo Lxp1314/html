@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link href="css/jquery.fullPage.css" />
+		<link href="css/site.css" rel="stylesheet" />
+		<link href="css/service.css" rel="stylesheet" />
+		<style type="text/css" rel="stylesheet">
+			@media only screen and (max-height:900px) {
+				.section {
+					padding-bottom: 40px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Start Navigation -->
+		<nav class="navbar navbar-default navbar-abs bootsnav">
+			<div class="container-bg">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="#brand"><img src="img/logo.png" class="logo" alt=""></a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">关于信唐</a>
+								<ul class="dropdown-menu">
+                                    <li><a href="honors.html">资质荣誉</a></li>
+                                    <li><a href="about.html">关于我们</a></li>
+                                    <li>
+										<a href="gongyi.html">公益</a>
+									</li>
+                               </ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">产品与服务</a>
+								<ul class="dropdown-menu">
+                                    <li><a href="smartCity.html">智慧城市</a></li>
+                                    <li><a href="gBigData.html">政府大数据</a></li>
+                                    <li><a href="superCase.html">经典案例</a></li>
+                               </ul>
+							</li>
+							<li>
+								<a href="employment.html">招纳贤士</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div id="fullpage">
+			<div class="section" style="position: relative; overflow: hidden;">
+
+				<canvas id="canvas"></canvas>
+				<!--<div class="section1_bg">
+					
+				</div>-->
+				<div style="position: absolute; bottom: 0; left: 0; right: 0;">
+					<img src="img/bg_city2.png" style="width: 100%;" />
+					<div class="gear gear1">
+						<a href="#section2">
+							<img src="img/gear01.png" class="img" />
+							<p class="gear-title" style="color: #3fa5ff;">智慧城管 </p>
+						</a>
+					</div>
+					<div class="gear gear2">
+						<a href="#section3">
+							<img src="img/gear02.png" class="img" />
+							<p class="gear-title" style="color: #fab13e;">智慧民生 </p>
+						</a>
+					</div>
+					<div class="gear gear3">
+						<a href="#section4">
+							<img src="img/gear03.png" class="img" />
+							<p class="gear-title" style="color: #2cdf83; font-size: 1.6rem;">智慧安监 </p>
+						</a>
+					</div>
+					<div class="gear gear4">
+						<a href="#section5">
+							<img src="img/gear04.png" class="img" />
+							<p class="gear-title" style="color: #2cdf83;">智慧旅游 </p>
+						</a>
+					</div>
+					<div class="gear gear5">
+						<a href="#section6">
+							<img src="img/gear05.png" class="img" />
+							<p class="gear-title" style="color: #3fa5ff; font-size: 1.5rem;">智慧公安 </p>
+						</a>
+					</div>
+					<div class="gear gear6">
+						<a href="#section7">
+							<img src="img/gear06.png" class="img" />
+							<p class="gear-title" style="color: #f4cc62; font-size: 1.6rem;">智慧网信 </p>
+						</a>
+					</div>
+					<div class="gear gear7">
+						<a href="#section8">
+							<img src="img/gear07.png" class="img" />
+							<p class="gear-title" style="color: #fab13e;">智慧民政 </p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--智慧城管-->
+			<div class="section" style="background-color: #f6f7f9">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="p_title">智慧城管</p>
+							<p class="p_content">智慧城管平台遵循国家住建部行业标准， 采用“9+1+N”的建设模式服务于城市管理工作，通过云计算、物联网、最新一代的无线通信、视频传输等多样化先进技术组合运用，采用网格化、精细化、长效化、智能化城市管理手段，打造“大城管”格局，最终实现从“数字城管”到“智慧城管”的全面升级。</p>
+						</div>
+					</div>
+
+					<div class="row" style="margin-top: 31px;">
+						<!--建设内容-->
+						<div class="col-md-12">
+							<div class="col-md-5">
+								<img src="img/eightFish01/iconBuild.png" />
+							</div>
+							<div class="col-md-7">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="mc-linebox">
+											<p class="p_linebox_title">城市网格化<br>管理平台</p>
+											<p class="p_linebox_content">
+												通过加强对单元网格的部件和事件巡查， 建立监督和处置互相分离的管理模式， 辅助城市管理者主动发现问题并及时处理， 加强政府对城市的管理能力和处理速度。
+											</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="mc-linebox">
+											<p class="p_linebox_title">市容<br>管理平台</p>
+											<p class="p_linebox_content">
+												利用地理信息技术，建立可视化的城市智慧市容管理平台。 能够对城市绿地资源、道路资源试行动态管理， 准确监测和预测城市绿地资源的动态变化， 为城市市容管理提供科学决策依据。
+											</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="mc-linebox">
+											<p class="p_linebox_title">城市管理<br>公共服务平台</p>
+											<p class="p_linebox_content">
+												实现社会公众对城市管理工作的参与， 调动市民群众等社会力量， 实现“社会化”的信息采集， 逐步实现“市民共管”的城管管理新格局。
+											</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="mc-linebox">
+											<p class="p_linebox_title">环卫<br>管理平台</p>
+											<p class="p_linebox_content">
+												从涉及环卫工作的“人”、“车”、“物”、“事”四个方面对城市环卫工作进行全过程实时管理， 提升环卫作业质量，降低运营成本，用数字评估和推动垃圾分类管理实效。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 80px;">
+						<div class="col-md-12">
+							<div style="height: 240px; border-radius: 120px; position: relative; background-color: #478afa;">
+								<i style="display: block; position: absolute; width: 100%; height: 4px; top: 50%; margin-top: 2px; background-color: white;"></i>
+								<i style="display: block; position: absolute; width: 260px; height: 260px; left: 50%; margin: -10px 0px 0px -130px; background-color: white; border-radius: 140px;"></i>
+								<img src="img/eightFish01/iconSpacil.png" style="position: absolute; width:200px; height: 200px; top:20px; left: 50%; margin-left: -100px;" />
+								<div style="position:absolute; width: 50%; top:10px; left:60px; padding-right: 180px; color: white;">
+									<p class="p_title2">城市管理业务精细主动化</p>
+									<p class="p_content2">
+										采用单元网格技术，利用网格化精细型城市管理方式， 纳入更多的城市管理单位，形成“大城管”格局，推动城市管理体制改革。
+									</p>
+								</div>
+								<div style="position:absolute; width: 50%; top:10px; right:60px; padding-left: 180px; color: white;">
+									<p class="p_title2">信息采集方式智能多元化</p>
+									<p class="p_content2">
+										城市管理问题信息采集手段智能多元， 组建网格员队伍，打造城市公共服务平台， 市民可通过APP、微信、热线等渠道反映城市管理问题。
+									</p>
+								</div>
+								<div style="position:absolute; width: 50%; top:134px; left:60px; padding-right: 180px; color: white;">
+									<p class="p_title2">问题处置手段高效协同化</p>
+									<p class="p_content2">
+										平台实现问题指挥派遣扁平化管理， 将问题直接派遣至一线人员进行处置， 纳入多部门协同处理相关问题，提高城市管理效率。
+									</p>
+								</div>
+								<div style="position:absolute; width: 50%; top:134px; right:60px; padding-left: 180px; color: white;">
+									<p class="p_title2">城市管理监督机制准确长效化</p>
+									<p class="p_content2">
+										系统采用“结果考评 + 过程考评”相结合的方式， 推动城市管理监督达到精确目标， 形成良好的城市管理监督机制。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--智慧民生-->
+			<div class="section" style="background-color: white;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="p_title">智慧民生</p>
+							<p class="p_content">智慧民生平台将以市民对政务、公共事业和便民服务等信息消费需求为核心， 依托云计算、移动互联网技术架构的城市级市民服务平台，采用云服务的方式聚合政府服务资源、 社会公共服务资源和便民服务资源，最终实现城市公共信息服务平台， 为整个城市打造一个安全可信的信息消费和信息惠民环境，促进新兴服务发展。
+							</p>
+						</div>
+					</div>
+
+					<div class="row" style="margin-top: 21px;">
+						<div class="col-md-7">
+							<div class="section3_box">
+								<p class="section3_title"><span>政务服务平台</span></p>
+								<p class="section3_content">
+									构建“互联网 + 政务服务”平台，整合各类政务服务事项和业务办理等信息，通过网上大厅、办事窗口、移动客户端、自助终端等多种形式，结合第三方平台，为自然人和法人提供一站式办理的政务服务 。
+								</p>
+							</div>
+							<div class="section3_box">
+								<p class="section3_title"><span>互动渠道平台</span></p>
+								<p class="section3_content">
+									平台将社会公众的意见、建议、投诉等问题集中在线受理，并通过网站将结果反馈给公众的应用模式，形成“网站受理、后台办理、网站反馈”的运转体系和“统一受理、部门分办、结果公开、群众评议”的运行机制。
+								</p>
+							</div>
+							<div class="section3_box" style="margin-bottom: 0px;">
+								<p class="section3_title"><span>便民服务平台</span></p>
+								<p class="section3_content">
+									平台以“便民、利民、惠民”为宗旨，采用线上 + 线下结合的模式，通过网站、微信、APP、社区服务站、服务热线等方式，优化和提升政府服务能力，提升市民生活幸福指数。
+								</p>
+							</div>
+
+						</div>
+						<div class=" col-md-5" style="margin-top:-60px; margin-left: -30px; padding: 0px;">
+							<img src="img/eightFish02/iconSan01.png" />
+						</div>
+					</div>
+					<div class="row" style="margin-top: 20px;">
+						<div class="col-md-6">
+							<div class="" style="margin-bottom: 20px;">
+								<img src="img/eightFish02/iconSan02.png" />
+							</div>
+							<div class="">
+								<img src="img/eightFish02/iconSan04.png" />
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="" style="margin-bottom: 20px;">
+								<img src="img/eightFish02/iconSan03.png" />
+							</div>
+							<div class="">
+								<img src="img/eightFish02/iconSan05.png" />
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--智慧安监-->
+			<div class="section" style="background-color: #f6f7f9;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="p_title">智慧安监</p>
+							<p class="p_content">信唐普华智慧安监平台采用先进的开发理念， 结合物联网、云计算、大数据等技术， 实现安全生产风险防控、综合监管、综合决策、公共服务、应急救援五大业务信息共享、数据互通， 为安全生产信息化的长远发展打下坚实基础。
+							</p>
+						</div>
+					</div>
+
+					<div class="row" style="margin-top: 21px;">
+						<div class="col-md-12" style="padding: 0px 50px;">
+							<div style="position: relative; ">
+								<img src="img/eightFish03/iconBGc01.png">
+								<div style="position: absolute; width: 30%; height: 30%; top: 5%;">
+									<p class="section4_title">安全生产风险管控系统</p>
+									<p class="section4_content">系统围绕安全防控基础理论体系、风险点查找与采集、风险研判、风险监测预警、风险防范以及风险应急处置等六大环节，实现对企业风险点全流程闭环监管。</p>
+								</div>
+								<div style="position: absolute; width: 30%; height: 30%; top: 38%;">
+									<p class="section4_title">安全生产应急救援系统</p>
+									<p class="section4_content">主要包括应急业务管理、应急风险分析预警、应急辅助决策、应急培训演练、应急移动应用，实现共享服务、应急协同服务、应急能力评估与分析评价服务、辅助决策支持服务等应用。</p>
+								</div>
+								<div style="position: absolute; width: 28%; height: 30%; top: 71%; left: 7%;">
+									<p class="section4_title">安全生产公共服务系统</p>
+									<p class="section4_content">系统主要服务于各级安全监管监察机构、企业和社会公众，基于互联网和移动网络，建设安全生产投诉举报、培训考核、政务公开、网上办事、在线服务、宣传教育、安全生产综合信息门户等应用。</p>
+								</div>
+								<div style="position: absolute; width: 28%; height: 30%; top: 5%; right: 3.5%;">
+									<p class="section4_title">安全生产综合监管系统</p>
+									<p class="section4_content">系统主要服务于各级安全监管监察机构，建设完善非煤矿山、危险化学品、烟花爆竹等安全监管所需要的业务系统，实现安全准入、隐患排查治理、重大危险源管理、行政执法、事故调查处理等功能。</p>
+								</div>
+								<div style="position: absolute; width: 28%; height: 30%; top: 45%; right: 0.5%;">
+									<p class="section4_title">安全生产综合决策系统</p>
+									<p class="section4_content">基于数据分析和工具，面向安全监管部门系统内部提供综合查询统计、安全生产辅助决策、政策法规（知识库）管理、事故预测预警、事故规律挖掘、数据综合展现等大数据应用。</p>
+								</div>
+								<p style="position: absolute; top:40%; left: 46%; font-size: 3rem; color: #478afa;">建设内容</p>
+							</div>
+						</div>
+						<div class="col-md-12" style="margin-top: 20px; padding: 0px 80px;">
+							<img src="img/eightFish03/iconBGh02.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--智慧旅游-->
+			<div class="section" style="background-color: white; background-image: url(img/eightFish04/iconTR03.png); background-position: center bottom; background-repeat: no-repeat;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="p_title">智慧旅游</p>
+							<p class="p_content">智慧旅游平台旨在提高城市旅游业各要素（旅行社、酒店、旅游客运、导游、购物等）运营和服务水平、 拓展服务模式和手段、强化旅游管理监督能力、促进旅游服务内容、管理方式和运营模式的转变， 全面提高城市旅游业竞争力。
+							</p>
+						</div>
+					</div>
+
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-md-4">
+							<div>
+								<h1 style="font-size: 1.4em;font-weight: bold;text-align: left;letter-spacing: 2px;color: #478afa;">
+												旅游综合数据中心
+											</h1>
+								<h5 style="font-size: 14px;text-align: left;margin-left: 0px;padding-right: ; ">
+												<p style="line-height: 25px;letter-spacing: 1px;">
+													建立旅游行业信息资源基础数据库，
+													为旅游管理部门提供旅游信息资源查询、分析、辅助决策；
+													为旅游企业的信息化提供基础数据；为社会公众提供旅游信息查询服务。
+												</p>
+											</h5>
+							</div>
+						</div>
+						<div class="col-md-4 text-center" style="padding-top: 20px;">
+							<img src="img/eightFish04/iconTR01.png" style="width: 50%;" />
+						</div>
+
+						<div class="col-md-4">
+							<div>
+								<h1 style="font-size: 1.4em;font-weight: bold;text-align: left;letter-spacing: 2px;color: #478afa;">
+												旅游大数据分析及应用平台
+											</h1>
+								<h5 style="font-size: 14px;text-align: left;margin-left: 0px;padding-right: ; ">
+												<p style="line-height: 25px;letter-spacing: 1px;">
+													为旅游行业提供旅游数据中隐藏的有价值信息，并进行可视化展现，作为管理层决策的基础数据依据。
+												</p>
+											</h5>
+							</div>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div style="margin-top: 20px;">
+								<h1 style="font-size: 1.4em;font-weight: bold;text-align: left;letter-spacing: 2px;color: #478afa;">
+												全媒体信息管理平台
+											</h1>
+								<h5 style="font-size: 14px;text-align: left;margin-left: 0px;padding-right: ; ">
+												<p style="line-height: 25px;letter-spacing: 1px;">
+													面向游客提供网站、APP、旅游子站、旅游微站等多类型展示，完善旅游门户结构，
+													为游客提供一站式的旅游服务，提升服务能力以及时效性。
+												</p>
+											</h5>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div>
+								<h1 style="font-size: 1.4em;font-weight: bold;text-align: left;letter-spacing: 2px;color: #478afa;">
+													旅游产业运行监测调度平台
+												</h1>
+								<h5 style="font-size: 14px;text-align: left;margin-left: 0px;padding-right: ; ">
+													<p style="line-height: 25px;letter-spacing: 1px;">
+														通过整合视频监控、住宿业统计、高速卡口、气象、环保及网络运营商等大数据分析，
+														为管理者提供客流引导、应急等功能，为游客信息服务提供服务。
+													</p>
+												</h5>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div>
+								<h1 style="font-size: 1.4em;font-weight: bold;text-align: left;letter-spacing: 2px;color: #478afa;">
+												旅游客户管理平台
+											</h1>
+								<h5 style="font-size: 14px;text-align: left;margin-left: 0px;padding-right: ; ">
+												<p style="line-height: 25px;letter-spacing: 1px;">
+													面向公众用户以及旅游管理部门实现接洽过程、合作事项、公众用户业务等相关信息；
+													将全国旅行社、旅游电商企业等旅游接待、分销企业录入，适时推送旅游营销推广信息。
+												</p>
+											</h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 text-center" style="padding-top: 20px;">
+							<img src="img/eightFish04/iconTR04.png" style="width: 50%;" />
+						</div>
+					</div>
+					<div class="row" style="margin-top: 30px;">
+						<div class="col-md-6">
+							<img src="img/eightFish04/iconTR02.png" style="margin-bottom:20px ;" />
+							<img src="img/eightFish04/iconTR06.png" />
+						</div>
+						<div class="col-md-6">
+							<img src="img/eightFish04/iconTR05.png" style="margin-bottom:20px ;" />
+							<img src="img/eightFish04/iconTR07.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" style="background-color: #f6f7f9;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="p_title">智慧公安</p>
+							<p class="p_content">智慧公安高度整合信息共享和高效联动应用两大环节，
+												自带覆盖全面、触角灵敏、反应快捷的情报信息搜集技术，
+												有效整合各类情报信息资源，实现跨区域、跨部门、跨警种信息关联、资源共享；
+												对各类预警信息实行分级、分类发布，对苗头性、倾向性预警信息进行综合分析和动向预测，
+												实现公安工作由事后反应型向事前预警型的转变。
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12" style="padding: 0px 50px; margin-top: -10px;">
+							<div style="position: relative; ">
+								<img src="img/eightFish05/iconGABG.png">
+								<div style="position: absolute; width: 30%; height: 30%; top: 7%;">
+									<p class="section4_title">大数据资源服务平台</p>
+									<p class="section4_content">中心采用传统技术与大数据、分布式等先进云计算技术相结合的方式搭建，
+											用以存储结构化、非结构化以及视音频、图像等多媒体数据资源。</p>
+								</div>
+								<div style="position: absolute; width: 30%; height: 30%; top: 38%;">
+									<p class="section4_title">大数据资源服务应用系统</p>
+									<p class="section4_content">资源应用系统采用集成全文检索功能并兼容 Hadoop 的分布式数据仓库，
+													提供搜索引擎服务。资源应用系统建设面向全警提供授权访问的综合应用系统。</p>
+								</div>
+								<div style="position: absolute; width: 30%; height: 30%; top: 68%;">
+									<p class="section4_title">联动合成作战平台</p>
+									<p class="section4_content">围绕公安实战需求，紧扣人、案、物三大警务实战元素，
+													对关联线索资源“一案（事）一档”，对警种部门开展工作“一案（事）一图”，
+													实现集“合成作战、信息共享、盯案管理、过程监督”为一体的警务实战模式。</p>
+								</div>
+								<div style="position: absolute; width: 30%; height: 30%; top: 3.5%; right: 0;">
+									<p class="section4_title">互联网立体管控情报分析系统</p>
+									<p class="section4_content">利用基于图数据库构建的知识图谱，实现团伙挖掘预警、动态多元管控、
+													隐形嫌疑人发现等高难度应用；更可以介入各警种数据、人力情报、
+													第三方数据等外部资源，融合网上网下数据 ID，创新网上网下一体化防控模式。</p>
+								</div>
+								<div style="position: absolute; width: 30%; height: 30%; top: 38%; right: 0%;">
+									<p class="section4_title">图像信息研判应用平台</p>
+									<p class="section4_content">以“人、车、事”为核心的视频应用服务子平台，
+													为政务外网 / 公安视频专网相关上层用户的多种应用提供服务支撑，
+													服务于公安多警种的不同业务。</p>
+								</div>
+								<div style="position: absolute; width: 30%; height: 30%; top: 68%; right: 0%;">
+									<p class="section4_title">情报信息综合应用平台</p>
+									<p class="section4_content">通过公安业务数据治理为“人事地物组织”的知识图谱关系网络，
+													辅以强大的交互可视化设计，提供嫌疑人积分模型、隐形嫌疑人挖掘、
+													各类可疑（涉毒、涉恐、涉黄等）团伙挖掘、基于文本挖掘的智能串并案等强大功能应用。</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12" style="margin-top: 20px; padding: 0px 80px;">
+							<div>
+								<img src="img/eightFish05/iconGA01.png" style="width: 7.8%;margin-left: -20px;margin-right: 5px;" />
+								<img src="img/eightFish05/iconGA02.png" style="width: 18%;margin-right: 5px;" />
+								<img src="img/eightFish05/iconGA03.png" style="width: 18%;margin-right: 5px;" />
+								<img src="img/eightFish05/iconGA04.png" style="width: 18%;margin-right: 5px;" />
+								<img src="img/eightFish05/iconGA05.png" style="width: 18%;margin-right: 5px;" />
+								<img src="img/eightFish05/iconGA06.png" style="width: 18%;" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" style="background-color: white;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="p_title">智慧网信</p>
+							<p class="p_content">2016年4月中共中央总书记、中央网络安全和信息化领导小组组长习近平强调按照创新、
+												协调、绿色、开放、共享的发展理念推动我国经济社会发展，
+												是当前和今后一个时期我国发展的总要求和大趋势，我国网信事业发展要适应这个大趋势，
+												在践行新发展理念上先行一步，推进网络强国建设，让互联网更好地造福国家和人民。
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12" style="margin-top: -10px;">
+							<div style="position: relative; ">
+								<img src="img/eightFish06/iconWXBG.png" style="width: 40%;">
+								<div style="width: 60%; position: absolute; top: 30px; right:0; bottom: 0;">
+									<img src="img/eightFish06/iconWX01.png" style="width: 100%; height:19%; margin-bottom: 1%;" />
+									<img src="img/eightFish06/iconWX02.png" style="width: 100%; height:19%; margin-bottom: 1%;" />
+									<img src="img/eightFish06/iconWX03.png" style="width: 100%; height:19%; margin-bottom: 1%;" />
+									<img src="img/eightFish06/iconWX04.png" style="width: 100%; height:19%; margin-bottom: 1%;" />
+									<img src="img/eightFish06/iconWX05.png" style="width: 100%; height: 19%;" />
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="" style="margin-top: 40px;">
+								<img src="img/eightFish06/iconWXF01.png" style="width: 42%;margin-right:20px;" />
+								<img src="img/eightFish06/iconWXF02.png" style="width: 27%;margin-right: 20px;" />
+								<img src="img/eightFish06/iconWXF03.png" style="width: 27%;" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" style="background-color: #f6f7f9;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="p_title">智慧民政</p>
+							<p class="p_content">智慧民政综合信息平台基于“解决民生、落实民权、
+												维护民利”的业务职责，以满足民政各级部门日常业务需求为根本目标，
+												以服务社会、服务公众、服务民政业务发展为宗旨，依托各类网络资源，
+												通过信息资源共享和业务系统整合，打造覆盖民政基层全业务的应用平台，
+												为建设人民满意的服务型民政提供强有力的技术支持。
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12" style="padding: 0px 50px; margin-top: -10px;">
+							<div style="position: relative; ">
+								<img src="img/eightFish07/iconMZBG.png">
+								<div style="position: absolute; width: 41%; height: 20%; top: 17%;">
+									<p class="section4_title">民政公共服务平台</p>
+									<p class="section4_content">通过建设统一的民政公共服务门户，实现民政全方位的政务公开，公开行政审批事项、
+											审批动态及其办理指南，提供申报表格下载、查询、咨询、投诉等服务。 同时，
+											实现与各直属单位民政网站资源的整合。</p>
+								</div>
+								<div style="position: absolute; width: 41%; height: 20%; top: 40%;">
+									<p class="section4_title">政务协同办公平台</p>
+									<p class="section4_content">实现民政局机关、直属单位、镇乡、街道、社区的行政日常办公，包括个人助理、公文管理、行政管理、
+											分类信息、任务管理、内部邮件等。</p>
+								</div>
+								<div style="position: absolute; width: 41%; height: 20%; top: 58.5%;">
+									<p class="section4_title">领导辅助决策平台</p>
+									<p class="section4_content">实现对民政各业务的基本情况、数量趋势、分布状况、受理情况、数据比对的综合分析，包括社会组织业务分析、
+											优抚安置业务分析、社会救助义务分析、社会福利业务分析、福利企业业务分析、老龄工作业务分析等。</p>
+								</div>
+								<div style="position: absolute; width: 41%; height: 20%; top: 80%;">
+									<p class="section4_title">综合业务管理系统</p>
+									<p class="section4_content">民政综合业务管理系统按各民政业务类别开发各民政业务管理系统，主要包括社会组织管理、优抚安置管理、社会救助管理、
+											社区工作管理、社会福利管理等子系统，同时在统一的数据库平台下做到各业务系统的数据关联。</p>
+								</div>
+								<img src="img/eightFish07/iconMZ01.png" style="position: absolute; width: 13.49%; height: 10.76%; left: 5%; top: 0;" />
+								<img src="img/eightFish07/iconMZ02.png" style="position: absolute; width: 13.49%; height: 10.76%; right: 5%; top: 49%;"/>
+								<img src="img/eightFish07/iconMZL01.png" style="position: absolute; width: 14.6%; height: 41.06%; left: 49%; top: 65%;"/>
+								<img src="img/eightFish07/iconMZL02.png" style="position: absolute; width: 14.6%; height: 41.06%; left: 65.6%; top: 65%;"/>
+								<img src="img/eightFish07/iconMZL03.png" style="position: absolute; width: 14.6%; height: 41.06%; left: 82.2%; top: 65%;"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--描述：侧边浮动栏 返回顶部-->
+		<div class="side-bar visible-lg">
+			<a href="#" class="icon-chat" style="border-radius: 10px;">微信
+				<div class="chat-tips">
+					<img src="img/icon/qrcode_wechat.jpg" alt="微信订阅号"></div>
+			</a>
+			<a href="#" class="icon-weibo" style="border-radius: 10px; display: none;">weibo</a>
+			<a href="#" class="icon-contact" style="border-radius: 10px;">mail</a>
+			<a href="#" class="icon-back-to-top" style="border-radius: 10px;"> </a>
+		</div>
+
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script src="js/jquery.fullpage.js"></script>
+		<script src="js/canvas.js"></script>
+		<script>
+			$(function() {
+				if($(window).innerHeight() > 900) {
+					$('#fullpage').fullpage({
+						//sectionsColor: ['white', '#f6f7f9', 'white', '#f6f7f9', 'white', '#f6f7f9', 'white', '#f6f7f9'],
+						anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8']
+					});
+					$(".icon-back-to-top").attr("href","#section1");
+				}else{
+					$(".icon-back-to-top").on('click', function(e) {
+						$("html, body").animate({
+							scrollTop: 0
+						}, 500);
+						return false; // 返回false可以避免在原链接后加上#
+					});
+				}
+
+				drawCanvasBg();
+			});
+
+			
+		</script>
+	</body>
+
+</html>

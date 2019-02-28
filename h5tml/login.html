@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>暗黑管理系统</title>
+		<style>
+			body {
+				background-color: black;
+				color: white;
+			}
+			
+			input {
+				border: solid 1px white;
+				background: transparent;
+				padding: 8px;
+				color: white;
+				text-align: center;
+			}
+			
+			button {
+				border: solid 1px white;
+				border-radius: 30px;
+				background: transparent;
+				padding: 8px 30px;
+				color: white;
+				margin-right: 5px;
+				font-size: 15px;
+				width: 100%;
+				margin-top: 5px;
+			}
+			
+			label {
+				font-size: 18px;
+				font-weight: 800;
+			}
+			
+			.container {
+				width: 100%;
+			}
+			
+			.left {
+				width: 50%;
+				float: left;
+			}
+			
+			.left img {
+				margin-top: 10%;
+				width: 100%;
+				animation: img-animation 5s;
+				-moz-animation: img-animation 5s;
+				-webkit-animation: img-animation 5s;
+				-o-animation: img-animation 5s;
+			}
+			
+			.right {
+				width: 50%;
+				float: left;
+			}
+			
+			.box {
+				margin-top: 300px;
+				display: inline-block;
+				padding: 30px 30px 20px;
+				border: solid 1px white;
+				animation: box-animation 3s;
+				-moz-animation: box-animation 5s;
+				-webkit-animation: box-animation 1s;
+				-o-animation: box-animation 5s;
+			}
+			
+			.box div {
+				margin: 10px;
+				text-align: center;
+			}
+			
+			.header {
+				font-size: 48px;
+				font-weight: bold;
+				display: block;
+				text-align: center;
+			}
+			
+			.copyright {
+				position: fixed;
+				bottom: 15px;
+				text-align: center;
+				width: 100%;
+				font-size: 12px;
+			}
+			
+			@keyframes img-animation {
+				from {
+					opacity: 0.0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			@keyframes box-animation {
+				from {
+					opacity: 0.0;
+					margin-top: 500px;
+				}
+				to {
+					opacity: 1;
+					margin-top: 300px;
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				.left {
+					width: 100%;
+				}
+				.left img {
+					width: 60%;
+					margin-top: 20px;
+					margin-left: 20%;
+				}
+				.right {
+					width: 100%;
+				}
+				.box {
+					margin-top: 0px;
+					border: 0px;
+				}
+				.copyright {
+					width: 80%;
+					left: 10%;
+				}
+			}
+			
+			@media screen and (min-width:769px) and (max-width:992px) {
+				.left img {
+					margin-top: 0px;
+				}
+			}
+			
+			@media screen and (min-width: 992px) {
+				.container {
+					width: 992px;
+					margin: 0 auto;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="left">
+				<img src="img/kulou2.jpg" />
+			</div>
+			<div class="right">
+				<div class="box">
+					<span class="header">暗黑管理系统</span>
+					<div>
+						<label>用户名：</label>
+						<input type="text" name="name" value="admin" />
+					</div>
+					<div>
+						<label>密　码：</label>
+						<input type="password" name="pwd" value="******" />
+					</div>
+					<div style="text-align: right;">
+						<button>登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			© from:2015 h5tml.com , All Rights Reserved. | 暗黑科技 | 服务条款
+		</div>
+	</body>
+
+</html>

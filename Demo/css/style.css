@@ -1,0 +1,97 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #facb9f;
+	position: relative;
+	z-index: -1000;
+}
+.container {
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+}
+button {
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px solid #ec3848;
+	border-radius: 20px;
+	background: none;
+	font-size: 16px;
+	color: #ec3848;
+	text-align: center;
+}
+
+button:active{
+	border: 1px solid green;
+}
+
+button:focus{
+	border: 1px solid blue;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	color: #666;
+	padding: 5px 0;
+	margin-top: 35px;
+}
+.pop_grab {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	z-index: 10000;
+}
+.grab_content {
+	width: 60%;
+	height: 130px;
+	margin-left: 18%;
+	margin-right: 20%;
+	padding: 15px 10px;
+	background: #fff;
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #666;
+	position: absolute;
+	top: 20%;
+}
+.grab_content p {
+	width: 100%;
+	margin: 5px;
+}
+.grab_title {
+	margin-bottom: 5px;
+}
+.grab_tel span {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 10px;
+	background: #f4f4f4;
+	text-align: center;
+}
+.grab_close {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	border-width: 2px;
+	background: #ec3848;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 18px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<style>
+			body {
+				padding-top: 70px;
+				padding-bottom: 70px;
+			}
+			
+			.nav-tabs-right li {
+				float: right;
+			}
+			
+			.nav-tabs-right li a {
+				margin-right: 0px;
+				margin-left: 2px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<h4>标签页</h4>
+			<ul class="nav nav-tabs">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">Profile</a></li>
+				<li role="presentation"><a href="#">Messages</a></li>
+				<li role="presentation" class="disabled"><a href="#">disabled link</a></li>
+				<li role="presentation" class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      					Dropdown <span class="caret"></span>
+    				</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+				<li role="presentation" class="dropup">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      					Dropdown <span class="caret"></span>
+    				</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+				<li>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</li>
+				<li style="float:right;">
+					<button type="submit" class="btn btn-default">Submit</button>
+				</li>
+			</ul>
+			<h4>靠右侧标签页</h4>
+			<div style="width: 300px;">
+			<ul class="nav nav-tabs nav-tabs-right">
+				<li style="float: left; line-height: 34px;">右侧标签页</li>
+				<li role="presentation" class="active"><a href="#home" data-toggle="tab">Home</a></li>
+				<li role="presentation"><a href="#profile" data-toggle="tab">Profile</a></li>
+			</ul>
+			<div class="tab-content" style="border: solid 1px #ddd; border-top: none; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
+				<div role="tabpanel" class="tab-pane active" id="home">home<br/>标签页1<br/>href="#home" data-toggle="tab"</div>
+				<div role="tabpanel" class="tab-pane" id="profile">profile<br/>标签页2<br/>href="#profile" data-toggle="tab"</div>
+			</div>
+			</div>
+			<h4>胶囊式标签页</h4>
+			<ul class="nav nav-pills">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">Profile</a></li>
+				<li role="presentation"><a href="#">Messages</a></li>
+				<li role="presentation" class="disabled"><a href="#">disabled link</a></li>
+				<li role="presentation" class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      					Dropdown <span class="caret"></span>
+    				</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+			<h4>胶囊式标签页 垂直排列</h4>
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">Profile</a></li>
+				<li role="presentation"><a href="#">Messages</a></li>
+			</ul>
+			<h4>导航条</h4>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img alt="飞云科技" src="img/flower1.png"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">信息 <span class="badge">42</span></a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action <span class="badge">5</span></a></li>
+									<li><a href="#">Another <span class="label label-danger">action</span> </a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link <span class="badge">15</span></a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Link</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+			<h4>导航条2</h4>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">飞云科技</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">论坛</a></li>
+							<li><a href="#">下载</a></li>
+						</ul>
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+			<h4>导航条3 固定在顶部</h4>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">飞云科技</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">论坛</a></li>
+							<li><a href="#">下载</a></li>
+						</ul>
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+			<h4>导航条4 固定在底部</h4>
+			<nav class="navbar navbar-inverse navbar-fixed-bottom">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">飞云科技</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">论坛</a></li>
+							<li><a href="#">下载</a></li>
+						</ul>
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

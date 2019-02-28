@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="styles/default.css">
+		<script src="highlight.pack.js"></script>
+	</head>
+
+	<body>
+		<pre>
+		<code class="html">	
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+	&lt;head&gt;
+		&lt;meta charset="utf-8"&gt;
+		&lt;title&gt;&lt;/title&gt;
+		&lt;style&gt;
+			body {
+				background-color: black;
+				color: white;
+			}
+			input {
+				border: solid 1px white;
+				background: transparent;
+				padding: 8px;
+				color: white;
+			}
+			.div1 {
+				position: absolute;
+				top: 5%;
+				width: 40%;
+				left: 10%;
+			}
+			.div1 img {
+				height: 800px;
+				width: auto;
+				float: right;
+			}
+			.div2 {
+				position: absolute;
+				top: 5%;
+				width: 40%;
+				left: 50%;
+				padding-top: 300px;
+			}
+			.header {
+				font-size: 60px;
+				font-weight: bold;
+				display: block;
+				text-align: center;
+			}
+			.div2 div {
+				margin: 10px;
+				text-align: center;
+			}
+			label {
+				font-size: 25px;
+			}
+			.login_box{
+				display: inline-block;
+				padding: 30px 30px 20px;
+				border: solid 1px white;
+			}
+			button{
+				border: solid 1px white;
+				border-radius: 30px;
+				background: transparent;
+				padding: 8px 30px;
+				color: white;
+				margin-right: 5px;
+				font-size: 15px;
+				width: 100%;
+				margin-top: 5px;
+			}
+			.copyright{
+				position: fixed;
+				bottom: 15px;
+				text-align: center;
+				width: 100%;
+				font-size: 12px;
+			}
+		&lt;/style&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;div class="div1"&gt;
+			&lt;img src="img/kulou2.jpg" /&gt;
+		&lt;/div&gt;
+		&lt;div class="div2"&gt;
+			&lt;div class="login_box"&gt;
+				&lt;span class="header"&gt;暗黑管理系统&lt;/span&gt;
+				&lt;div&gt;
+					&lt;label&gt;用户名：&lt;/label&gt;
+					&lt;input type="text" name="name" value="admin" /&gt;
+				&lt;/div&gt;
+				&lt;div&gt;
+					&lt;label&gt;密&nbsp;码：&lt;/label&gt;
+					&lt;input type="password" name="pwd" value="******" /&gt;
+				&lt;/div&gt;
+				&lt;div style="text-align: right;"&gt;
+					&lt;button&gt;登录&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="copyright"&gt;
+			© from:2015 h5tml.com , All Rights Reserved. | 暗黑科技 | 服务条款
+		&lt;/div&gt;
+	&lt;/body&gt;
+
+&lt;/html&gt;
+		</code>
+		</pre>
+
+		<pre>
+			<code class="javascript">
+&lt;script&gt;
+	//hljs.initHighlightingOnLoad();
+	$(document).ready(function() {
+		$('pre code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	});
+&lt;/script&gt;
+			</code>
+		</pre>
+
+		<pre>
+			<code class="csharp">
+using System.Web.Optimization;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
+
+namespace MvcApplication1
+{
+    // 注意: 有关启用 IIS6 或 IIS7 经典模式的说明，
+    // 请访问 http://go.microsoft.com/?LinkId=9394801
+
+    public class MvcApplication : System.Web.HttpApplication
+    {
+        protected void Application_Start()
+        {
+            AreaRegistration.RegisterAllAreas();
+
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AuthConfig.RegisterAuth();
+        }
+    }
+}
+			</code>
+		</pre>
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			 //			hljs.initHighlightingOnLoad();
+			$(document).ready(function() {
+				$('pre code').each(function(i, block) {
+					hljs.highlightBlock(block);
+				});
+			});
+		</script>
+		<a href="http://www.oschina.net/news/34861/8-jquery-syntax-highlighting-plugins">8 个 jQuery 的语法高亮插件</a>
+		<br>
+		<a href="http://www.codeceo.com/article/7-javascript-highlighte-plugin.html">7个高性能JavaScript代码高亮插件</a>
+		<br>
+
+	</body>
+
+</html>

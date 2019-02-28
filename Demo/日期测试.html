@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div id="info"></div>
+		<script>
+			var date = new Date("2015-12-07");
+			for (var i = 0; i < 10; i++) {
+				var value = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate();
+				document.getElementById("info").innerHTML = document.getElementById("info").innerHTML + value + "<br/>";
+				date=AddDays(date,1);
+			}
+
+			function AddDays(date, value) {
+				return new Date(Date.parse(date) + (86400000 * value));
+			}
+		</script>
+	</body>
+
+</html>

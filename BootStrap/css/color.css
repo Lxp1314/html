@@ -1,0 +1,100 @@
+.gray-darker {
+	background-color: #222
+}
+.gray-dark {
+	background-color: #333
+}
+.gray {
+	background-color: #555
+}
+.gray-light {
+	background-color: #999
+}
+.gray-lighter {
+	background-color: #eee
+}
+.brand-primary {
+	background-color: #337ab7
+}
+.brand-success {
+	background-color: #5cb85c
+}
+.brand-warning {
+	background-color: #f0ad4e
+}
+.brand-danger {
+	background-color: #d9534f
+}
+.brand-info {
+	background-color: #5bc0de
+}
+.bs-purple {
+	background-color: #563d7c
+}
+.bs-purple-light {
+	background-color: #c7bfd3
+}
+.bs-purple-lighter {
+	background-color: #e5e1ea
+}
+.bs-gray {
+	background-color: #f9f9f9
+}
+.menu_yellow {
+	background-color: #ffa000;
+}
+.menu_blue {
+	background-color: #40c4ff;
+}
+.menu_pink {
+	background-color: #e91e63;
+}
+.menu_green {
+	background-color: #00e676;
+}
+.menu_purple {
+	background-color: #8e24aa;
+}
+
+.box_red{
+	background-color: rgb(229,20,0);
+}
+.box_yellow{
+	background-color: rgb(243,156,18);
+}
+.box_yellow_light{
+	background-color: rgb(255,196,13);
+}
+.box_gray{
+	background-color: rgb(189,195,199);
+}
+.box_gray_light{
+	background-color: rgb(149,165,166);
+}
+.box_purple{
+	background-color: rgb(155,89,182);
+}
+.box_pink{
+	background-color: rgb(255,0,151);
+}
+.box_pink_light{
+	background-color: rgb(230,113,184);
+}
+.box_green{
+	background-color: rgb(51,153,51);
+}
+.box_green_yellow{
+	background-color: rgb(140,191,38);
+}
+.box_green_blue{
+	background-color: rgb(46,204,133);
+}
+.box_blue{
+	background-color: rgb(46,139,204);
+}
+.box_blue_dark{
+	background-color: rgb(44,62,80);
+}
+.box_blue_green{
+	background-color: rgb(0,171,169);
+}

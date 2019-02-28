@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<!-- Basic Page Needs================================================== -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>UI设计_交互设计_APP开发_界面设计_移动应用开发（安卓开发、iOS开发）_上海艾艺</title>
+		<meta name="keywords" content="UI设计,上海UI设计, 软件界面设计,html5开发,移动端UI设计,IOS开发,Android（安卓）开发,用户体验,交互设计,多媒体互动展示,数据展示,数据监控平台">
+		<meta name="description" content="上海艾艺（ADinnet）成立于2006年，高端的移动应用和开发公司，专注于UI设计和APP应用与研究，将视觉和功能整合，提供美观、易用、实用的互联网产品。">
+		<meta name="title" content="上海艾艺信息技术有限公司">
+		<!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核================================================== -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1,initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+		<!-- IOS6全屏 Chrome高版本全屏 ================================================== -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<!-- 让360双核浏览器用webkit内核渲染页面 ================================================== -->
+		<meta name="renderer" content="webkit">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="css/allcss.css" rel="stylesheet" type="text/css">
+		<!-- Favicons -->
+		<link href="img/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="http://www.adinnet.cn/images/apple-touch-icon-152x152.jpg" rel="icon" sizes="196x196">
+		<!-- IOS 主屏图标 -->
+		<link href="http://www.adinnet.cn/images/apple-touch-icon-76x76.jpg" rel="apple-touch-icon-precomposed">
+		<link href="http://www.adinnet.cn/images/apple-touch-icon-76x76.jpg" rel="apple-touch-icon-precomposed" sizes="76x76">
+		<link href="http://www.adinnet.cn/images/apple-touch-icon-120x120.jpg" rel="apple-touch-icon-precomposed" sizes="120x120">
+		<link href="http://www.adinnet.cn/images/apple-touch-icon-152x152.jpg" rel="apple-touch-icon-precomposed" sizes="152x152">
+	</head>
+
+	<body>
+		<div id="header">
+			<nav class="navbar navbar-inverse navbar-fixed-top" id="topnavbar">
+				<div class="wrap">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+							<a class="navbar-brand logo" href="#">
+								<span class="myicon-logo"></span>
+								<h1 class="hidden">上海艾艺信息技术有限公司</h1></a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active">
+									<a href="index.html">首页</a>
+								</li>
+								<li>
+									<a href="service.html">服务</a>
+								</li>
+								<li>
+									<a href="/program/">方案</a>
+								</li>
+								<li>
+									<a href="/Template/Case-list.aspx">案例</a>
+								</li>
+								<li>
+									<a href="/about-us.html">关于</a>
+								</li>
+								<li>
+									<a href="/Template/BlogList.aspx?TID=2">新体验</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="banner-wrap">
+			<div class="swiper-container" id="indexSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="home-swiper-text-01 text-01 home-text-img">
+							<a href="#top" class="set-phone-bgi">
+								<img src="img/banner/home_swiper_banner_01_text.png" alt="" class="img-responsive">
+							</a>
+						</div>
+						<div class="swiper-img hidden-xs">
+							<img src="img/banner/home_swiper_banner_01.jpg" alt="" class="img-responsive indexbennerimg">
+						</div>
+						<!--小屏显示图片-->
+						<div class="swiper-img2 visible-xs-block">
+							<img class="indexbennerimg2" src="img/banner/home_swiper_banner_01_mobile.jpg" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="home-swiper-text-01 text-02 home-text-img">
+							<a href="#top" class="set-phone-bgi">
+								<img src="img/banner/home_swiper_banner_02_text.png" alt="" class="img-responsive">
+							</a>
+						</div>
+						<div class="swiper-img hidden-xs">
+							<img src="img/banner/home_swiper_banner_02.png" alt="" class="img-responsive indexbennerimg">
+						</div>
+						<!--小屏显示图片-->
+						<div class="swiper-img2 visible-xs-block">
+							<img class="indexbennerimg2" src="img/banner/home_swiper_banner_02_mobile.jpg" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="home-swiper-text-01 text-03 home-text-img">
+							<a href="#top" class="set-phone-bgi">
+								<img src="img/banner/home_swiper_banner_03_text.png" alt="" class="img-responsive">
+							</a>
+						</div>
+						<div class="swiper-img hidden-xs">
+							<img src="img/banner/home_swiper_banner_03.jpg" alt="" class="img-responsive indexbennerimg">
+						</div>
+						<!--小屏显示图片-->
+						<div class="swiper-img2 visible-xs-block">
+							<img class="indexbennerimg2" src="img/banner/home_swiper_banner_03_mobile.jpg" />
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="home-swiper-text-01 text-04 home-text-img">
+							<a href="#top" class="set-phone-bgi">
+								<img src="img/banner/home_swiper_banner_04_text.png" alt="" class="img-responsive">
+							</a>
+						</div>
+						<div class="swiper-img hidden-xs">
+							<img src="img/banner/home_swiper_banner_04.jpg" alt="" class="img-responsive indexbennerimg">
+						</div>
+						<!--小屏显示图片-->
+						<div class="swiper-img2 visible-xs-block">
+							<img class="indexbennerimg2" src="img/banner/home_swiper_banner_04_mobile.jpg" />
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination" id="indexPagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<div class="scroll-down"><span class="myicon-scroll-down"></span></div>
+		</div>
+		<div class="main" id="top">
+			<div class="wrap count-wrap">
+				<div class="container-fluid padding-30 wow bounceInUp">
+					<h2 class="fs42">探索指尖上极致的用户体验</h2>
+					<div class="row user-experience">
+						<div class="col-xs-6 col-sm-3 no-padding">
+							<div class="double-img" style='background-image: url("img/experience_01.png");'>
+								<img class="img-responsive" src="img/experience_transparent_img[1].png">
+							</div>
+							<h4 class="fs24">产品模式规划</h4>
+							<span class="text-muted">洞察捕获商业价值，产品合理定位</span>
+						</div>
+						<div class="col-xs-6 col-sm-3 no-padding">
+							<div class="double-img" style='background-image: url("img/experience_02.png");'>
+								<img class="img-responsive" src="img/experience_transparent_img[1].png">
+							</div>
+							<h4 class="fs24">跨领域体验咨询</h4>
+							<span class="text-muted">根据用户需求聚焦痛点，做可执行的方案</span>
+						</div>
+						<div class="col-xs-6 col-sm-3 no-padding">
+							<div class="double-img" style='background-image: url("img/experience_03.png");'>
+								<img class="img-responsive" src="img/experience_transparent_img[1].png">
+							</div>
+							<h4 class="fs24">落地<sup class="text-red">+</sup>技术</h4>
+							<span class="text-muted">团队默契合作，打造高品质高性能产品</span>
+						</div>
+						<div class="col-xs-6 col-sm-3 no-padding">
+							<div class="double-img" style='background-image: url("img/experience_04.png");'>
+								<img class="img-responsive" src="img/experience_transparent_img[1].png">
+							</div>
+							<h4 class="fs24">多维深度研究</h4>
+							<span class="text-muted">用户需求长期跟踪反馈迭代</span>
+						</div>
+					</div>
+					<div style="left: -860px; top: -866px; position: absolute;">Initially, a good way to entice sustomers' interest, we simply want to allow them to know that we are doing sports, and at the moment, present strategy most effective need to serve the purpose of advertisment. So we ought to pick out the offers
+						<a href="http://www.coolwholesales.com/">Personalized Custom Keychains</a> which have to be beneficial for customers and they don't want to throw away, and let other people to know that the store is during promotion
+						<a href="http://www.coolwholesales.com/CO/?Crystal-Keychains_785_793_new.html">Personalized Crystal Keychains</a>.</div>
+				</div>
+			</div>
+			<!--案例-->
+			<div class=" gray-bg">
+				<div class="wrap count-wrap">
+					<div class="container-fluid padding-25 wow bounceInUp">
+						<h2 class="fs42">我们仅仅只是多考虑了一个像素</h2>
+						<div class="row case-wrap" id="All">
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_51.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/40fc0e38_c710_4ca9_93e5_00c8da5b02bd[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">拍拍贷 理财APP</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_107.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/cccbf32f_b94c_401b_b858_2f9c49392705[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">精锐教育 学习帮APP</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_52.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/e2718b3b_690a_489a_a83c_219f30336973[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">全峰 快递APP</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_96.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/0581f1c4_0d8d_4da9_b1dc_0e42eca5be8b[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">星知 明星APP</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_37.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/17109795_3e77_440e_a563_9bb1f6ff8723[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">联想 享联数据展示系统UI设计</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_111.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/f60fb21c_01b0_4834_bb5c_03b91c066ca5[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">国家电网 能效测评系统UI设计</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_110.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/be40b027_da13_4b08_a16b_ad505666020b[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">濠信节能 数据展示系统UI设计</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+							<div class="col-xs-6 col-sm-3 padding-5 item">
+								<a href="http://www.adinnet.cn/caseinfo/2016_06/case_102.html">
+									<div class="item-cont">
+										<div class="double-img" style='background-image: url("img/case/9f79c07b_4431_41c3_9514_bd8e1955778e[1].jpg");'><img class="img-responsive" src="img/case/case_transparent_img[1].png"></div>
+										<h4 class="fs18">东方航空 室内定位系统UI设计</h4><span class="more-point"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span></div>
+								</a>
+							</div>
+
+						</div>
+
+						<div class="load-more text-center" id="Alldown">
+							<a class="btn btn-red btn-big on clickLoad" href="http://www.adinnet.cn/Template/Case-list.aspx"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Load More</a>
+
+							<input id="Allpage" type="hidden" value="1">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--方案-->
+			<div class="wrap count-wrap white-bg">
+				<div class="container-fluid  wow bounceInUp">
+					<h2 class="fs42">源自多年试探与决策的整体解决方案</h2>
+					<!--手机端隐藏-->
+					<div class="row program-wrap hidden-xs">
+						<div class="col-xs-12 col-sm-4">
+							<a href="http://www.adinnet.cn/program/program_5.html">
+								<div class="img"><img class="img-circle" src="img/program/c637b07c_f09b_4af4_9c0b_6613414a96cd[1].png"></div>
+								<h4 class="fs24">智能设备APP</h4><span class="text-muted fs16">艾艺 Intelligent 体验团队旨在以用户为中心，超越用户预期创新用户体验。紧紧围绕监控、对讲、报警、环境、健康、集中管理与综合服务等...</span></a>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<a href="http://www.adinnet.cn/program/program_3.html">
+								<div class="img"><img class="img-circle" src="img/program/83782474_9a71_47a8_a696_87eeb8b8a37e[1].png"></div>
+								<h4 class="fs24">大数据可视化</h4><span class="text-muted fs16">随着移动互联网和智能应用的普及,数据爆炸式增长,人类步入“大数据时代”。在这一时代背景下,传统的数据呈现浏览、分析评估......</span></a>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<a href="http://www.adinnet.cn/program/program_7.html">
+								<div class="img"><img class="img-circle" src="img/program/32006ad0_8d9d_43de_8822_1a4a45c73056[1].png"></div>
+								<h4 class="fs24">幼教动画课件</h4><span class="text-muted fs16">随着我们生活水平的日益提高，父母对于子女特别是幼儿教育的重视程度已经白热化，我国幼儿教育市场规模迅速扩大 传统教育的单一模式无法满足家长……</span></a>
+						</div>
+					</div>
+					<!--非手机端显示-->
+					<div class="row program-wrap visible-xs-block">
+						<div class="swiper-container swiper-container-horizontal swiper-wp8-horizontal" id="programSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="width: 0px;" data-swiper-slide-index="2">
+									<a href="http://www.adinnet.cn/program/program_7.html"></a>
+									<div class="col-xs-12">
+										<a href="http://www.adinnet.cn/program/program_7.html">
+											<div class="img"><img class="img-circle" src="img/program/32006ad0_8d9d_43de_8822_1a4a45c73056[1].png"></div>
+											<h4 class="fs24">幼教动画课件</h4><span class="text-muted fs16">随着我们生活水平的日益提高，父母对于子女特别是幼儿教育的重视程度已经白热化，我国幼儿教育市场规模迅速扩大 传统教育的单一模式无法满足家长……</span></a>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 0px;" data-swiper-slide-index="0">
+									<a href="http://www.adinnet.cn/program/program_5.html"></a>
+									<div class="col-xs-12">
+										<a href="http://www.adinnet.cn/program/program_5.html">
+											<div class="img"><img class="img-circle" src="img/program/c637b07c_f09b_4af4_9c0b_6613414a96cd[1].png"></div>
+											<h4 class="fs24">智能设备APP</h4><span class="text-muted fs16">艾艺 Intelligent 体验团队旨在以用户为中心，超越用户预期创新用户体验。紧紧围绕监控、对讲、报警、环境、健康、集中管理与综合服务等...</span></a>
+									</div>
+								</div>
+								<div class="swiper-slide" style="width: 0px;" data-swiper-slide-index="1">
+									<a href="http://www.adinnet.cn/program/program_3.html"></a>
+									<div class="col-xs-12">
+										<a href="http://www.adinnet.cn/program/program_3.html">
+											<div class="img"><img class="img-circle" src="img/program/83782474_9a71_47a8_a696_87eeb8b8a37e[1].png"></div>
+											<h4 class="fs24">大数据可视化</h4><span class="text-muted fs16">随着移动互联网和智能应用的普及,数据爆炸式增长,人类步入“大数据时代”。在这一时代背景下,传统的数据呈现浏览、分析评估......</span></a>
+									</div>
+								</div>
+							</div>
+							<!-- 如果需要分页器 -->
+							<div class="swiper-pagination" id="programPagination"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--客户-->
+			<div class="wrap count-wrap white-bg top-border">
+				<div class="container-fluid padding-25 wow slideInLeft" data-wow-delay="0.3s" data-wow-duration="2s">
+					<h2 class="fs42">我们以跨领域的互联网嗅觉与他们一起创造奇迹</h2>
+					<div class="row client-wrap">
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="上海证券交易所" class="img-responsive" alt="名字" src="img/partners/6ac9f803_5bfe_4a91_b408_89286d8e6dbc.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="汇添富" class="img-responsive" alt="名字" src="img/partners/51a217d6_fc56_4d03_a8c4_83db75ab7675.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="红星美凯龙家金所" class="img-responsive" alt="名字" src="img/partners/5d0ccc47_707e_4002_90e2_17fe8a5b250e.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="东方航空" class="img-responsive" alt="名字" src="img/partners/b2442f7a_d536_4a0d_b60a_022ff9bb1c59.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="罗莱家纺" class="img-responsive" alt="名字" src="img/partners/1e168bcb_15b6_4dc3_ae44_48a1d0022c51.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="全峰" class="img-responsive" alt="名字" src="img/partners/f5238d77_34f2_4b46_8b71_e983e28ef601.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="三菱电梯" class="img-responsive" alt="名字" src="img/partners/9f781da7_9b3d_4009_8faa_f74452898286.jpg"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="精锐教育" class="img-responsive" alt="名字" src="img/partners/b7cac080_6afe_478b_b005_0fb8d589094b.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="华图教育" class="img-responsive" alt="名字" src="img/partners/e68a8605_691e_4dee_8c14_ea3bdc78b44f.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="平安" class="img-responsive" alt="名字" src="img/partners/cefd1f04_8df2_4929_8555_e6cf67077d55.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="临港集团" class="img-responsive" alt="名字" src="img/partners/629387f0_2703_408d_83cb_aa75d7110ce4.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="中国电信" class="img-responsive" alt="名字" src="img/partners/93f1ce70_a1e6_4994_8e33_60fe2ddbb74d.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="杭州数梦工场" class="img-responsive" alt="名字" src="img/partners/41def98b_5b7f_4688_aeff_c83c4f2a9c03.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="联想" class="img-responsive" alt="名字" src="img/partners/b981bdbf_bb09_446a_8aab_5436b9b2257f.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="搜狗" class="img-responsive" alt="名字" src="img/partners/9de317fa_7817_4ee5_858c_a7addd5a9eb6.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="华为" class="img-responsive" alt="名字" src="img/partners/fe963b6a_6eb1_4e5e_b142_224cc6502e4e.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="佳能" class="img-responsive" alt="名字" src="img/partners/7c1acae3_a3ad_45df_9908_fef135f26a9c.png"></div>
+						</div>
+						<div class="col-xs-4 col-sm-2 padding-5">
+							<div class="img"><img title="东方证券" class="img-responsive" alt="名字" src="img/partners/befe2b36_0d41_4f6c_8f79_7eda042dd4dd.png"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+
+		<div class="footer">
+			<div class="wrap">
+				<div class="container-fluid">
+					<div class="row top">
+						<div class="col-xs-12 col-sm-4 left">
+							<a href="https://dribbble.com/adinnet" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+							<a><i class="fa fa-behance" aria-hidden="true"></i></a>
+							<a class="wx" href=""><i class="fa fa-weixin" aria-hidden="true"></i>
+								<span class="qr_code"><img class="img-responsive" alt="" src="img/qr_code.png"></span>
+							</a>
+							<a href="http://weibo.com/adinnet" target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-xs-12 col-sm-8 right">
+							<span class="hot-line">咨询热线：<i>400-021-8655</i></span>
+							<a class="btn-red" href="http://www.adinnet.cn/about-us.html">联系我们</a>
+							<a class="btn-red" href="http://www.adinnet.cn/service.html">我要咨询<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="bottom">
+						<h3 class="text-center fs24">专业的人机交互策划、高端UI设计、移动App开发公司</h3>
+						<p class="text-center">
+							沪ICP备05026071号 © 2006-2017 ADinNET.cn All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="back-totop" style="display: block; z-index: auto;">
+			<a class="share-item share-item-qq" href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=4000218655" target="_blank"><i class="fa fa-qq" aria-hidden="true"></i></a>
+			<a class="share-item share-item-mobile" href="">
+				<i class="fa fa-mobile" aria-hidden="true"></i>
+				<div class="tel-slider">400-021-8655</div>
+			</a>
+			<a class="share-item to-top" style="cursor: pointer;"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
+		<script src="js/lib/jquery-1.11.1.min.js"></script>
+		<script src="js/lib/require.js" data-main="js/main"></script>
+	</body>
+
+</html>

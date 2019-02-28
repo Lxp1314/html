@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css"> 
+@font-face
+{
+    font-family: myFirstFont;
+    src: url(fonts/fzlthjt.TTF);
+}
+ 
+.a
+{
+    font-family:myFirstFont;
+    position: absolute;
+    left: 80px;
+    -ms-transform: rotate(30deg);
+    
+}
+.t{ 
+	width: 1000px;
+	height: 100px;
+	background-color: yellow;
+	margin: 0 auto;
+	transition: width 0.6s ease-in-out, border-radius 0.6s ease-in-out;
+	/*transition: border-radius 0.5s;*/
+	
+	border-radius: 50px 50px;
+}
+.t:hover{
+	width:100%;
+	border-radius: 0;
+}
+@keyframes zhuan{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.chilun{
+	position: absolute;
+	left: 50%;
+	
+}
+.chilun:hover{
+	background: url(img/gear01x.png);
+}
+.img_c{
+	animation: zhuan infinite 5s linear paused;
+}
+.img_c:hover{
+	animation: zhuan infinite 5s linear running;
+}
+</style>
+	</head>
+	<body>
+		<div class="a">
+		关于信<b>唐</b>
+		</div>
+		<div>
+			关于信唐
+		</div>
+		<div class="t">
+			
+		</div>
+		<div class="chilun">
+			<img src="img/chilun.png" class="img_c" />
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="400" height="300" viewBox="0,0,400,300">
+
+  <line x1="20" x2="20" y1="20" y2="20" stroke="orange" stroke-width="1" >
+    <animate attributeType="XML" attributeName="x2" from="20" to="220" dur="0.5s" fill="freeze" repeatCount="2"/>
+  </line>
+  <line x1="30" x2="30" y1="130" y2="10" stroke="orange" stroke-width="1" >
+    <animate attributeType="XML" attributeName="y2" from="130" to="10" dur="0.5s" fill="freeze" repeatCount="2"/>
+  </line>
+  <line x1="210" x2="210" y1="10" y2="130" stroke="orange" stroke-width="1" >
+    <animate attributeType="XML" attributeName="y2" from="10" to="130" dur="0.5s" fill="freeze" repeatCount="2"/>
+  </line>
+  <line x1="220" x2="220" y1="120" y2="120" stroke="orange" stroke-width="1" >
+    <animate attributeType="XML" attributeName="x2" from="220" to="20" dur="0.5s" fill="freeze" repeatCount="2"/>
+  </line>
+</svg>
+	</body>
+</html>

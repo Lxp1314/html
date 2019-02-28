@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>触屏轮播</title>
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/medical.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>-->
+	</head>
+
+	<body style="background-image: url(img/bg-medical.jpg);">
+		<div>
+			<div style="height: 0px;"></div>
+			<div class="slider">
+				<ul>
+					<li>
+						<a href="http://www.jqueryfuns.com" target="_blank"><img src="img/1.jpg" alt="网站建设团队"></a>
+					</li>
+					<li>
+						<a href="http://www.jqueryfuns.com" target="_blank"><img src="img/2.jpg" alt="网页特效集锦"></a>
+					</li>
+					<li>
+						<a href="http://www.jqueryfuns.com" target="_blank"><img src="img/3.jpg" alt="JS代码素材库"></a>
+					</li>
+					<li>
+						<a href="http://www.jqueryfuns.com" target="_blank"><img src="img/4.jpg" alt="用心建站用心服务"></a>
+					</li>
+					<li>
+						<a href="http://www.jqueryfuns.com" target="_blank"><img src="img/5.jpg" alt="学会用才能学会写"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<!--<img src="img/logo.png" />-->
+				<h1 style="font-size: 6em; color: white;text-shadow: 5px 5px 5px rgb(26,114,163);">雅西怀来</h1>
+			</div>
+			
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(1);"><img src="img/about.png" alt="" title=""><span>About Us</span></a>
+					</li>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(2);"><img src="img/tools.png" alt="" title=""><span>Services</span></a>
+					</li>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(3);"><img src="img/blog.png" alt="" title=""><span>Blog</span></a>
+					</li>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(5);"><img src="img/docs.png" alt="" title=""><span>Portfolio</span></a>
+					</li>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(6);"><img src="img/photos.png" alt="" title=""><span>Gallery</span></a>
+					</li>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(7);"><img src="img/videos.png" alt="" title=""><span>Videos</span></a>
+					</li>
+					<!--<li>
+						<a href="#" onclick="swiperParent.swipeTo(8);"><img src="img/clients.png" alt="" title=""><span>Clients</span></a>
+					</li>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(9);"><img src="img/twitter.png" alt="" title=""><span>Twitter</span></a>
+					</li>
+					<li>
+						<a href="#" onclick="swiperParent.swipeTo(10);"><img src="img/contact.png" alt="" title=""><span>Contact</span></a>
+					</li>-->
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/banner.js"></script>
+		<script>
+			$(".slider").yxMobileSlider({
+				width: 640,
+				height: 320,
+				during: 3000,
+				speed:30,
+            	marginlr:0
+			})
+		</script>
+	</body>
+
+</html>

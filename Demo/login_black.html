@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body {
+				background-color: black;
+				color: white;
+			}
+			input {
+				border: solid 1px white;
+				background: transparent;
+				padding: 8px;
+				color: white;
+			}
+			.div1 {
+				position: absolute;
+				top: 5%;
+				width: 40%;
+				left: 10%;
+			}
+			.div1 img {
+				height: 800px;
+				width: auto;
+				float: right;
+			}
+			.div2 {
+				position: absolute;
+				top: 5%;
+				width: 40%;
+				left: 50%;
+				padding-top: 300px;
+			}
+			.header {
+				font-size: 60px;
+				font-weight: bold;
+				display: block;
+				text-align: center;
+			}
+			.div2 div {
+				margin: 10px;
+				text-align: center;
+			}
+			label {
+				font-size: 25px;
+			}
+			.login_box{
+				display: inline-block;
+				padding: 30px 30px 20px;
+				border: solid 1px white;
+			}
+			button{
+				border: solid 1px white;
+				border-radius: 30px;
+				background: transparent;
+				padding: 8px 30px;
+				color: white;
+				margin-right: 5px;
+				font-size: 15px;
+				width: 100%;
+				margin-top: 5px;
+			}
+			.copyright{
+				position: fixed;
+				bottom: 15px;
+				text-align: center;
+				width: 100%;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div1">
+			<img src="img/kulou2.jpg" />
+		</div>
+		<div class="div2">
+			<div class="login_box">
+				<span class="header">暗黑管理系统</span>
+				<div>
+					<label>用户名：</label>
+					<input type="text" name="name" value="admin" />
+				</div>
+				<div>
+					<label>密&nbsp;码：</label>
+					<input type="password" name="pwd" value="******" />
+				</div>
+				<div style="text-align: right;">
+					<button>登录</button>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			© from:2015 h5tml.com , All Rights Reserved. | 暗黑科技 | 服务条款
+		</div>
+	</body>
+
+</html>

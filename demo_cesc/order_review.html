@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>CESC-质量信息反馈</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-table.css">
+		<link rel="stylesheet" href="css/fileinput.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-table.js"></script>
+		<script src="js/bootstrap-table-zh-CN.js"></script>
+		<script src="js/fileinput.js"></script>
+		<script src="js/fileinput.zh.js"></script>
+		<script src="js/common.js"></script>
+		<style type="text/css">
+			.files {
+				width: 16px;
+				height: 16px;
+			}
+			
+			.content-box{
+				border:solid 1px #dddddd; border-radius: 5px; margin-top: 5px;
+			}
+			
+			ul.timeline {
+				list-style-type: none;
+				background: url("image/time-line.png") repeat-y scroll 50px 0px transparent;
+				padding: 0;
+				margin: 10px;
+			}
+			
+			ul.timeline li {
+				position: relative;
+				margin-bottom: 20px;
+			}
+			
+			ul.timeline li .time {
+				position: absolute;
+				width: 66px;
+				background-color: #428bca;
+				color: white;
+				text-align: center;
+				font-size: 75%;
+				font-weight: 700;
+				padding: 3px 5px;
+				border-radius: 5px;
+				left: 15px;
+			}
+			
+			ul.timeline li .time-content {
+				margin-left: 95px;
+				padding: 0px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<nav id="column-left">
+				<div style="width: 130px; height: 130px; margin: 40px 35px; border-radius: 50% 50%; background-color: white; text-align: center;">
+					<img src="image/head/ofo.jpg" style=" width: 60%; margin-top: 25%;" />
+				</div>
+				<h4 class="text-center left-company">ofo小黄车</h4>
+				<div class="left-company-info">
+					<!--<div class="row" style="border-top: solid 1px white;"></div>-->
+					<div class="row">
+						<div class="col-sm-5 text-right no-padding">订单概况：</div>
+						<div class="col-sm-7 no-padding">
+							<span class="label label-success">总订单数：360</span><br />
+							<span class="label label-warning">完成订单：200</span><br />
+							<span class="label label-danger">在线订单：160</span><br />
+						</div>
+						<div class="col-sm-5 text-right no-padding">公司名称：</div>
+						<div class="col-sm-7 no-padding">
+							ofo小黄车
+						</div>
+						<div class="col-sm-5 text-right no-padding">用户名称：</div>
+						<div class="col-sm-7 no-padding">
+							ofo黄总
+						</div>
+						<div class="col-sm-5 text-right no-padding">用户权限：</div>
+						<div class="col-sm-7 no-padding">
+							A级
+						</div>
+						<div class="col-sm-5 text-right no-padding">子账号数量：</div>
+						<div class="col-sm-7 no-padding">
+							3
+						</div>
+					</div>
+				</div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<span class="badge badge2">&gt;</span> 订单查询
+					</a>
+					<div class="list-group list-group-child">
+						<a href="main.html" class="list-group-item"><span class="badge badge2">&gt;</span>在线订单</a>
+						<a href="main.html?state=1" class="list-group-item"><span class="badge badge2">&gt;</span>完成订单</a>
+					</div>
+					<a href="order_review.html" class="list-group-item active"><span class="badge badge2">&gt;</span>合同评审</a>
+					<a href="quality.html" class="list-group-item"><span class="badge badge2">&gt;</span><span class="badge badge-danger">2</span>质量信息</a>
+					<a href="service2.html" class="list-group-item"><span class="badge badge2">&gt;</span>智能客服</a>
+					<a href="service.html" class="list-group-item"><span class="badge badge2">&gt;</span>售前咨询</a>
+					<a href="chat.html" class="list-group-item"><span class="badge badge2">&gt;</span>行业交流</a>
+				</div>
+			</nav>
+			<div id="content">
+				<div class="visible-xs" style="height: 48px; background-color: #1757b9; position: relative;">
+					<div style="position: absolute; width: 36px; height: 36px; left: 6px; top: 6px; background-color: white; border-radius: 50% 50%; text-align: center;">
+						<img src="image/logo_blue.png" style="height: 24px; margin-top: 6px;" />
+					</div>
+					<div style="position: absolute; width: 36px;height: 36px; right: 6px; top: 6px; background-color: ;">
+						<button type="button" class="btn-menu" id="btn-menu">
+					            <span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					          </button>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<!--<div class="page-header">
+					  <p style="font-size: 30px;">订单查询</p>
+					</div>-->
+
+					<div class="page-header hidden-xs">
+						<ol class="breadcrumb">
+							<li>当前位置：</li>
+							<li>
+								<a href="#">首页</a>
+							</li>
+							<li>
+								<a href="#">合同评审</a>
+							</li>
+						</ol>
+					</div>
+
+					<div style="margin: 10px 0px;">
+						<div class="form-inline" role="form">
+							<div class="form-group">
+								<input name="search" class="form-control" type="text" placeholder="合同编号">
+							</div>
+							<div class="form-group hidden-xs">
+								<select class="form-control">
+									<option>合同类型</option>
+									<option>组合订单</option>
+									<option>减划</option>
+									<option>模块</option>
+									<option>卡</option>
+									<option>CSP卡</option>
+									<option>CSP模块</option>
+									<option>COB</option>
+									<option>其它</option>
+								</select>
+							</div>
+							<button id="ok" type="submit" class="btn btn-default hidden-xs">查询</button>
+						</div>
+					</div>
+					
+					<table id="table" 
+						data-height="766" 
+						data-pagination="true" 
+						data-show-footer="true"
+						data-page-size="15" 
+						data-page-list="[5,10,15,20,50]" 
+						data-pagination-first-text="首页" 
+						data-pagination-pre-text="上一页" 
+						data-pagination-next-text="下一页" 
+						data-pagination-last-text="尾页">
+						<thead>
+							<tr>
+								<th data-field="id" data-sortable="true" data-switchable="false">合同编号</th>
+								<th data-field="name" data-switchable="false">公司名称</th>
+								<th data-field="info" data-switchable="false">合同信息</th>
+								<th data-field="time" data-switchable="false">下单时间</th>
+								<th data-field="type" data-sortable="true" >合同类型</th>
+								<th data-field="user" data-sortable="true">对接人</th>
+								<th data-field="id" data-formatter="operateFormatter" data-align="center">操作</th>
+								
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var $table = $('#table');
+			var typeArr = ['组合订单', '减划', '模块', '卡', 'CSP卡', 'CSP模块', 'COB', '其它'];
+			var typeProduction = ['工程', '量产'];
+			var nameArr = ['智能GPS定位芯片合同', '智能感应声音控制模块合同'];
+			var rows = 2;
+
+			$(function() {
+				var data = [];
+				for(var i = 0; i < rows; i++) {
+					var id = '000000' + i;
+					var random = parseInt(Math.random() * rows);
+					//					console.log(random);
+					data[i] = {
+						"id": "ISB20170216" + id.substring(id.length - 3),
+						"name": i < 10 ? nameArr[0] : nameArr[1],
+						"info": "合同时间、名称、属性、状态",
+						"time": "2017-12-25",
+						'user': "laucher",
+						"type": typeArr[random % typeArr.length],
+						"type_production": i < 10 ? typeProduction[0] : typeProduction[1],
+						"price": "2000 000 000",
+						"time": i < 10 ? "2017-10-17" : "2017-10-10",
+						"pay_state": "已支付",
+						//						"file": 'a.txt'
+					};
+				}
+
+				var is_mobile = $(window).width() < 768 ? true : false;
+				$table.bootstrapTable({
+					data: data,
+					cardView: is_mobile,
+//					showToggle: !is_mobile,
+					pageList: is_mobile ? [] : [5, 10, 15, 20, 50],
+					
+				});
+
+				$("#btn-menu").on('click', function() {
+					if($("#column-left").css('margin-left') == "-200px") {
+						$("#column-left").css('margin-left', '0px');
+					} else {
+						$("#column-left").css('margin-left', '-200px');
+					}
+				});
+
+			});
+
+			function operateFormatter(value, row) {
+				return '<a class="btn btn-xs btn-warning" href="order_review_add.html">查看</a>'
+				+'<button class="btn btn-xs btn-success" style="margin-left:50px;">下载</button>'
+				+'<button class="btn btn-xs btn-info" style="margin-left:50px;">反馈</button>';
+			}
+			
+		</script>
+	</body>
+
+</html>

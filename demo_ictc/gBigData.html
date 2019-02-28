@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link href="css/site.css" rel="stylesheet" />
+		<style type="text/css">
+			a:hover,
+			a:focus {
+				outline: none;
+				text-decoration: none;
+			}
+			
+			.tab .nav-tabs {
+				position: relative;
+				border-bottom: none;
+			}
+			
+			.tab .nav-tabs li {
+				text-align: center;
+				/*margin-right: 10px;*/
+			}
+			
+			.tab .nav-tabs li a {
+				display: block;
+				font-size: 16px;
+				font-weight: 600;
+				color: #444;
+				padding: 10px 15px;
+				background: transparent;
+				margin-right: 0;
+				border: none;
+				border-radius: 0;
+				overflow: hidden;
+				position: relative;
+				z-index: 1;
+				transition: all 0.5s ease 0s;
+			}
+			
+			.tab .nav-tabs li a:before {
+				content: "";
+				width: 100%;
+				height: 3px;
+				/*background: #de7921;*/
+				position: absolute;
+				top: 92%;
+				left: 0;
+				transition: all 0.3s ease 0s;
+			}
+			
+			.tab .nav-tabs li a:hover:before,
+			.tab .nav-tabs li.active a:before,
+			.tab .nav-tabs li.active a:hover:before {
+				top: 0;
+			}
+			
+			.tab .nav-tabs li a:after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				/*background: #fff;*/
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: -1;
+				transition: all 0.3s ease 0s;
+			}
+			
+			.tab .nav-tabs li a:hover:after,
+			.tab .nav-tabs li.active a:after,
+			.tab .nav-tabs li.active a:hover:after {
+				top: 0;
+				border-bottom: 2px #FFFFFF solid;
+			}
+			
+			.nav-tabs li.active a,
+			.nav-tabs li.active a:focus,
+			.nav-tabs li.active a:hover,
+			.nav-tabs li a:hover {
+				border: none;
+			}
+			
+			.tab .tab-content {
+				padding: 30px 15px 20px;
+				background: #fff;
+				font-size: 14px;
+				color: #555;
+				line-height: 26px;
+			}
+			
+			.tab .tab-content h3 {
+				font-size: 24px;
+				margin-top: 0;
+			}
+			/*@media only screen and (max-width: 479px){
+					.tab .nav-tabs li{ width: 100%; }
+				}*/
+			
+			.nav-tabs>li.active>a,
+			.nav-tabs>li.active>a:hover,
+			.nav-tabs>li.active>a:focus {
+				background-color: transparent;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Start Navigation -->
+		<nav class="navbar navbar-default navbar-abs bootsnav">
+			<div class="container-bg">
+				<div class="container">
+					<!-- Start Header Navigation -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="#brand"><img src="img/logo.png" class="logo" alt=""></a>
+					</div>
+					<!-- End Header Navigation -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">关于信唐</a>
+								<ul class="dropdown-menu">
+                                    <li><a href="honors.html">资质荣誉</a></li>
+                                    <li><a href="about.html">关于我们</a></li>
+                                    <li>
+										<a href="gongyi.html">公益</a>
+									</li>
+                               </ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">产品与服务</a>
+								<ul class="dropdown-menu">
+                                    <li><a href="smartCity.html">智慧城市</a></li>
+                                    <li><a href="gBigData.html">政府大数据</a></li>
+                                    <li><a href="superCase.html">经典案例</a></li>
+                               </ul>
+							</li>
+							<li>
+								<a href="employment.html">招纳贤士</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<img src="img/Gbigdata/BigDatabanner.jpg" width="100%" />
+		</div>
+
+		<div class="container" style="padding-bottom: 40px;">
+			<p class="p_title">信唐普华大数据平台</p>
+			<p class="p_content text-center">信唐普华大数据平台由数据交换中心、大数据融合中心、大数据分析中心、大数据应用中心和大数据管理中心组成支撑政府、经济与民生等业务应用。 平台中整合了来自于四大库以及各政府部门的信息资源，同时汇聚了企业的相关信息，随着建设的加速，数据的数量、种类都将快速增长，形成面向政企业务的大数据。 平台的业务量增长也将产生更多的企业用户行为数据和运维数据。政府可实时监控企业动态、获取的各项经济指数，预测发展趋势，挖掘潜在规律，并以此作为决策制定的依据。
+			</p>
+		</div>
+		<div class="container-fluid bg-color1">
+			<div class="container" style="padding-bottom: 40px;">
+				<p class="p_title">平台特点</p>
+				<div class="row">
+					<div class="col-md-4">
+						<div style="width: 198px; margin: 0 auto;">
+							<img src="img/Gbigdata/BDtedian01.png" />
+							<p class="p_title_3 color1">
+								深度挖掘建模分析
+							</p>
+							<p class="p_content">
+								基于整合的数据，结合研究经验抽象， 采用机器学习/非结构化挖掘/统计分析等多种方法进行建模和模型验证， 并通过加强学习进行模型优化。
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div style="width: 198px; margin: 0 auto;">
+							<img src="img/Gbigdata/BDtedian02.png" />
+							<p class="p_title_3 color1">
+								大规模分布式计算
+							</p>
+							<p class="p_content">
+								支持以 Spark/Hadoop 为主的分布式计算框架，将输入的数据集切分成块后并行处理、排序、再归集的整个过程，可处理 PB 级别的数据。
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div style="width: 198px; margin: 0 auto;">
+							<img src="img/Gbigdata/BDtedian03.png" />
+							<p class="p_title_3 color1">
+								海量数据存储/管理
+							</p>
+							<p class="p_content">
+								实现海量数据的快速处理和存储，支持批处理、实时处理等业务需求，对数据处理，业务开发等方面进行优化。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="padding-bottom: 40px;">
+			<p class="p_title">行业应用</p>
+			<p class="p_content text-center">信唐普华专注于安全生产大数据、宏观经济大数据、舆情大数据等几方面的应用， 为政府提供决策分析手段，打造出更加透明的政府、更加智慧的政府、更加负责任的政府。
+			</p>
+		</div>
+		<div class="container-fluid" style="background-color:#478afa ;">
+			<div class="row">
+				<div class="container">
+					<div class="tab" role="tabpanel" style="text-align: center;">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="col-md-4" style="margin-right: 0;padding-top:10px;padding-bottom: 10px;">
+								<a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" style="padding:0 80px 5px 80px ">
+									<h3 style="color:#F9F9F9;letter-spacing: 2px;">安全生产大数据</h3>
+								</a>
+							</li>
+							<li role="presentation" class="col-md-4" style="padding-bottom: 10px;padding-top:10px;">
+								<a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab" style="padding:0 80px 5px 80px ">
+									<h3 style="color:#F9F9F9;letter-spacing: 2px;">宏观经济大数据</h3>
+								</a>
+							</li>
+							<li role="presentation" class="col-md-4" style="padding-bottom: 10px;padding-top:10px;">
+								<a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab" style="padding:0 80px 5px 80px ">
+									<h3 style="color:#F9F9F9;letter-spacing: 2px;">其他领域</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tab panes -->
+		<div class="tab-content tabs text-center">
+			<!--一安全生产大数据-->
+			<div role="tabpanel" class="tab-pane fade in active" id="Section1">
+
+				<div style="padding: 40px 0px 60px;">
+					<div class="container">
+						<p class="p_title_2 color2">企业安全生产 360 度画像</p>
+						<p class="p_content color2" style="margin-top: -18px; margin-bottom: 40px;">(加强对目标企业认知的深度，提高监管效率。)</p>
+						<div class="row">
+							<img src="img/Gbigdata/sfBD01.png" />
+							<img src="img/Gbigdata/sfBD02.png" style="height: 357px;" />
+						</div>
+
+					</div>
+				</div>
+				<div style="padding: 40px 0px 60px;" class="bg-color1">
+					<div class="container">
+						<p class="p_title_2 color2">安全生产预警分析 </p>
+						<div class="row" style="margin-top: 40px;">
+							<img src="img/Gbigdata/sfYJ01.png" />
+							<img src="img/Gbigdata/sfYJ02.png" style="height: 312px;" />
+						</div>
+					</div>
+				</div>
+				<div style="padding: 40px 0px 60px;">
+					<div class="container">
+						<p class="p_title_2 color2">安全生产舆情分析 </p>
+						<div class="row" style="margin-top: 40px;">
+							<img src="img/Gbigdata/sfYQ01.png" style="margin-right: 20px;" />
+							<img src="img/Gbigdata/sfYQ02.png" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--二宏观经济大数据-->
+			<div role="tabpanel" class="tab-pane fade" id="Section2">
+				<div style="padding: 40px 0px 60px;">
+					<div class="container" style="margin-bottom: 30px;">
+						<p class="p_title_2 color2">宏观经济大数据</p>
+						<p class="p_content">
+							依托各级政府电子政务网络平台，整合统计局、中宏、中经网等多种来源数据。 利用政府内部信用数据、决策系统、经济文献系统、固定资产投资系统、价格监管平台等资源。实现纵向各级、横向各行业的政府宏观经济管理部门的互联互通的信息共享，提高宏观分析和决策的科学性。 为政府及时、准确、全面地掌握宏观经济运行态势提供信息服务，增强政府调控宏观经济、驾驭市场变化、应对突发事件、总揽经济全局的能力。
+						</p>
+					</div>
+					<img src="img/Gbigdata/bbD.png" />
+				</div>
+			</div>
+			<!--三其他领域-->
+			<div role="tabpanel" class="tab-pane fade" id="Section3">
+				<div style="padding: 40px 0px 60px;">
+					<p class="p_title_2 color2">政府社会管理大数据</p>
+					<p class="p_content color2" style="margin-top: -18px; margin-bottom: 40px;">了解辖区内的人员各种变化与异常</p>
+					<div class="container">
+						<img src="img/Gbigdata/FBD01.png" />
+					</div>
+				</div>
+				<div style="padding: 40px 0px 60px;" class="bg-color1">
+					<p class="p_title_2 color2">辖区人口变化来源去向趋势分析 </p>
+					<div class="container">
+						<img src="img/Gbigdata/FBD02.png" style="margin-right: 20px;" />
+					</div>
+				</div>
+				<div style="padding: 40px 0px 60px;">
+					<p class="p_title_2 color2">舆情大数据</p>
+					<p class="p_content color2" style="margin-top: -18px;">(持续跟踪热点事件，专项分析传播特点)</p>
+					<div class="container">
+						<img src="img/Gbigdata/FBD04.png" />
+						<img src="img/Gbigdata/FBD03.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1">
+						<ul>
+							<li class="title">联系我们</li>
+							<li>地址：北京市海淀区知春路甲48号盈都大厦B座20层</li>
+							<li>电话：（010）5873 1219</li>
+							<li>热线：4008045108</li>
+							<li>邮箱：service@info-itic.com.cn</li>
+							<li>邮编：100086</li>
+
+						</ul>
+					</div>
+					<div class="col-md-5 col-md-offset-1">
+						<ul>
+							<li class="title">版权信息</li>
+							<li>http://www.info-itic.com.cn</li>
+							<li>京公网安备11010802011386号</li>
+							<li>京ICP备13039065号</li>
+							<li>Copyright 2013 ITIC , All Rights Reserved</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--描述：侧边浮动栏 返回顶部-->
+		<div class="side-bar visible-lg">
+			<a href="#" class="icon-chat" style="border-radius: 10px;">微信
+				<div class="chat-tips">
+					<!--<i>微信订阅号</i>-->
+					<img src="img/icon/qrcode_wechat.jpg" alt="微信订阅号">
+				</div>
+			</a>
+			<a href="#" class="icon-weibo" style="border-radius: 10px; display: none;">weibo</a>
+			<a href="#" class="icon-contact" style="border-radius: 10px;">mail</a>
+			<a href="#" class="icon-back-to-top" style="border-radius: 10px;"> </a>
+		</div>
+
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		<script>
+			//返回顶部
+			$(document).ready(function() {
+				var $backToTop = $(".icon-back-to-top");
+				/* 隐藏回顶部按钮					  $backToTop.hide(); */
+				//					$backToTop.hide();
+				//					$(window).on('scroll', function() {
+				//						if($(this).scrollTop() > 100) { //返回顶部按钮将在用户向下滚动100像素后出现
+				//							$backToTop.fadeIn(1000);
+				//						} else {
+				//							$backToTop.fadeOut(1000);
+				//						}
+				//					});
+				$backToTop.on('click', function(e) {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 500);
+					//						$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); // 这行是 Opera 的补丁, 少了它 Opera 是直接用跳的而且画面闪烁 by willin
+					//						$body.animate({
+					//							scrollTop: 0
+					//						}, 1000);
+					return false; // 返回false可以避免在原链接后加上#
+				});
+			});
+		</script>
+	</body>
+
+</html>

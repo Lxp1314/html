@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<style type="text/css">
+			img {
+				width: 100%;
+			}
+			.h100 {
+				height: 100px;
+			}
+			.h48 {
+				height: 36px;
+			}
+			.bg-r {
+				background-color: red;
+			}
+			.bg-g {
+				background-color: green;
+			}
+			.bg-b {
+				background-color: blue;
+			}
+			.bg-y {
+				background-color: yellow;
+			}
+			.col {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid h48 bg-g">
+			class="container-fluid h48 bg-g" 头部导航
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 h100 bg-y">
+					class="col-sm-12 h100 bg-y"
+					<br/>如果你的banner图片是默认适配电脑的（宽度在900px左右），那么手机和电脑都可以100%；
+				</div>
+				<div class="col-sm-12 col-md-8 col-md-offset-2 h100 bg-g">
+					class="col-sm-12 col-md-8 col-md-offset-2 h100 bg-g"
+					<br/>如果你的banner图片是默认适配手机的（宽度在600px左右），那么手机100%，电脑2/3；
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 h100 bg-r">
+					class="col-xs-12 col-sm-6 col-md-4 h100 bg-r"
+					<br/>列之间有空隙
+					<br/> 每列左右padding=15px，第一列和最后一列都距离边15px；每列之间距离15px+15px
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 h100 bg-y">
+					class="col-xs-12 col-sm-6 col-md-4 h100 bg-y"
+					<br/> 列之间有空隙
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 h100 bg-b">
+					class="col-xs-12 col-sm-6 col-md-4 h100 bg-b"
+					<br/> 列之间有空隙
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col h100 bg-g">
+					class="col-xs-12 col-sm-6 col-md-4 col h100 bg-g"
+					<br/>列直接无空隙
+					<br /> 通过给列设置.col{padding-left:0px; padding-right:0px;}， 抵消掉bootstrap框架col-*-*的默认左右padding 15px
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col h100 bg-b">
+					class="col-xs-12 col-sm-6 col-md-4 col h100 bg-b"
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col h100 bg-r">
+					class="col-xs-12 col-sm-6 col-md-4 col h100 bg-r"</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4 col">
+					<div class="bg-danger">
+						bootstrap row 之间的竖直方向的距离要怎么调整? » 社区» Ruby ... 发贴时间：2014年6月19日 这是bootstrap 代码规范,不要强加过多自定义CSS去调整,如果非要这样请书写 至前做出优先权去所谓的覆盖。如果非要反规范的去实现想法请 加class不要加id。同时更加好的解 ... ruby-china.org/topics/20061-好搜快照
+					</div>
+					<div class="bg-warning">
+						3.2.3 Bootstrap栅格系统_Bootstrap实战_红黑联盟读书频道 Bootstrap的栅格系统有两种,一种是固定式的(Fix),一种是流式的(Fluid),也就是可适应宽度的。固定式栅格系统每列的宽度及列与列间的间距都是固定的,列宽为60px,列间距为20... book.2cto.com/201311/35699.html-好搜快照-红黑联盟读书频道
+					</div>
+					<div class="bg-primary">
+						boostrap表格怎列间距怎么设置啊。设置了几个都没用- 开源中国社区 自定义一个Bootstrap的主题吧~~ 最新热门职位 更多开发者职位上 开源中国·招聘 回答案顶部
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col">
+					<div class="bg-warning">
+						3.2.3 Bootstrap栅格系统_Bootstrap实战_红黑联盟读书频道 Bootstrap的栅格系统有两种,一种是固定式的(Fix),一种是流式的(Fluid),也就是可适应宽度的。固定式栅格系统每列的宽度及列与列间的间距都是固定的,列宽为60px,列间距为20... book.2cto.com/201311/35699.html-好搜快照-红黑联盟读书频道
+					</div>
+					<div class="bg-primary">
+						怎样改变bootstrap栏格系统的列间隔_百度知道
+怎样改变bootstrap栏格系统的列间隔改变样式表的col的填充距,它的默认是左右15PX。 ... bootstrap的相关知识 等待您来回答 知道日报 精彩知识在知道 ©2015 Baidu
+zhidao.baidu.com/question/1...268.html-百度知道
+					</div>
+					<div class="bg-danger">
+						bootstrap row 之间的竖直方向的距离要怎么调整? » 社区» Ruby ... 发贴时间：2014年6月19日 这是bootstrap 代码规范,不要强加过多自定义CSS去调整,如果非要这样请书写 至前做出优先权去所谓的覆盖。如果非要反规范的去实现想法请 加class不要加id。同时更加好的解 ... ruby-china.org/topics/20061-好搜快照
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col">
+					<div class="bg-primary">
+						BootStrap入门教程(一) - followingturing 追随图灵的路上. - 博客频道- ...
+发表时间：2012年7月18日
+GitHub上这样介绍 bootstrap:简单灵活可用于架构流行的用户界面和交互接口的html,cs... @gridGutterWidth 20px 列间距 表1-1格网...
+blog.csdn.net-好搜快照-CSDN博客频道
+					</div>
+					<div class="bg-danger">
+						bootstrap div 间距-共享资料网
+列间距 表1-1格网变量我们通过修改以上值,并重新编译 B ootstrap 来实现.--Body content-- /div /div /div 如果对 Bootstrap 提供的布局.
+racktom.com/tag/bootstrap div 间距-好搜快照-我要母爱网
+					</div>
+					<div class="bg-warning">
+						3.2.3 Bootstrap栅格系统_Bootstrap实战_红黑联盟读书频道 Bootstrap的栅格系统有两种,一种是固定式的(Fix),一种是流式的(Fluid),也就是可适应宽度的。固定式栅格系统每列的宽度及列与列间的间距都是固定的,列宽为60px,列间距为20... book.2cto.com/201311/35699.html-好搜快照-红黑联盟读书频道
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js "></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+	</body>
+
+</html>

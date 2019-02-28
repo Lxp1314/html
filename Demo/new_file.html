@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="按钮, button, css, " />
+<meta name="description" content="这篇文章教你用 CSS + 图片的方式制作漂亮的有点击效果的按钮，明白了原理，相信你也可以制作更加丰富的效果。" />
+<title>用 CSS 让你的按钮（button）更加迷人 - 按钮, button, css, </title>
+</head>
+<body>
+<div id="example">
+<h3 id="example_title">用 CSS 让你的按钮（button）更加迷人</h3>
+<div id="example_main">
+<!--************************************* 实例代码开始 *************************************-->
+<style type="text/css">
+a.button {
+background: transparent url("http://www.syku.net/web/UploadFiles_5065/200712/20071203121045802.gif") no-repeat scroll top right;
+color: #444;
+display: block;
+float: left;
+font: normal 12px arial, sans-serif;
+height: 24px;
+margin-right: 6px;
+padding-right: 18px; /* sliding doors padding */
+text-decoration: none;
+}
+a.button span {
+background: transparent url("http://www.syku.net/web/UploadFiles_5065/200712/20071203121046965.gif") no-repeat;
+display: block;
+line-height: 14px;
+padding: 5px 0 5px 18px;
+}
+a.button:active {
+background-position: bottom right;
+color: #000;
+outline: none; /* hide dotted outline in Firefox */
+}
+a.button:active span {
+background-position: bottom left;
+padding: 6px 0 4px 18px; /* push text down 1px */
+}
+</style>
+<br class="clear" />
+<a class="button" href="#" onclick="this.blur(); return false;"><span>提交</span></a>
+<a class="button" href="#" onclick="this.blur(); return false;"><span>重置</span></a>
+<br class="clear" />
+<br />
+<!--************************************* 实例代码结束 *************************************-->
+</div>
+</div>
+</body>
+</html>

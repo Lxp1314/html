@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title></title>
+
+		<style type="text/css">
+			body {
+				background-color: black;
+				padding: 0px;
+				margin: 0px;
+				color: white;
+			}
+			
+			.box_purple {
+				background-color: rgb(155, 89, 182);
+			}
+			
+			.box_pink {
+				background-color: rgb(255, 0, 151);
+			}
+			
+			.box_green {
+				background-color: rgb(51, 153, 51);
+			}
+			
+			.box_blue {
+				background-color: rgb(46, 139, 204);
+			}
+			
+			.banner {
+				width: 100%;
+				margin: 0 auto;
+				height: 200px;
+				overflow: hidden;
+				background-color: rgba(255, 255, 255, .5);
+			}
+			
+			.banner .children {
+				width: 400%;
+				/*4个banner4倍宽度*/
+				height: 100%;
+			}
+			
+			.banner .children .child {
+				position: relative;
+				width: 25%;
+				float: left;
+				/*4个banner每个25%*/
+				height: 100%;
+				overflow: hidden;
+				text-align: center;
+			}
+			
+			.banner .dots {
+				position: relative;
+				top: -34px;
+				padding: 8px;
+				/*background-color: rgba(0, 0, 0, .15);*/
+				text-align: center;
+			}
+			
+			.banner .dots .dot {
+				width: 8px;
+				height: 8px;
+				border: solid 2px rgb(255, 255, 255);
+				border-radius: 8px;
+				margin: 0px 8px;
+				display: inline-block;
+				box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, .55);
+			}
+			
+			.banner .dots .active {
+				background-color: rgb(255, 255, 255);
+			}
+			
+			.banner .arrows {
+				position: relative;
+				top: -160px;
+			}
+			
+			.banner .arrows .arrow {
+				width: 30px;
+				height: 30px;
+				border: solid 2px white;
+				border-radius: 30px;
+				text-align: center;
+				vertical-align: middle;
+				margin: 15px;
+				font-weight: bolder;
+				font-size: 30px;
+				line-height: 30px;
+				cursor: pointer;
+			}
+			
+			.banner .arrowLeft {
+				float: left;
+			}
+			
+			.banner .arrowRight {
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="banner" id="banner1">
+			<div class="children">
+				<div class="child box_purple">
+					<h1>第1页</h1></div>
+				<div class="child box_pink"><h1>第2页</h1></div>
+				<div class="child box_green"><h1>第3页</h1></div>
+				<div class="child box_blue"><h1>第4页</h1></div>
+			</div>
+			<div class="dots">
+				<div class="dot active"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+			<div class="arrows">
+				<div class="arrow arrowLeft" onclick="moveLeft()">&lt;</div>
+				<div class="arrow arrowRight" onclick="moveRight()">&gt;</div>
+			</div>
+		</div>
+		<div id="info" style="width:300px; height: 200px; margin: 0 auto;"></div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+			var children;
+			var dots
+			var count;
+			var cur = 0; //当前显示
+			var pre = 0;
+			var width;
+			var moving = false;
+			$(document).ready(function() {
+				children = $("#banner1").children(".children").children("div");
+				dots = $("#banner1").children(".dots").children("div");
+				count = children.length;
+				width = $(children[0]).width();
+			});
+
+			function moveRight() {
+				if (!moving) {
+					moving = true;
+					pre = cur;
+					cur++;
+					if (cur == count) {
+						cur = 0;
+					}
+					$(children[cur]).css("left", -width * (cur - 1));
+					$(children[pre]).animate({
+						left: '+=' + (-width) + 'px'
+					});
+					$(children[cur]).animate({
+						left: '+=' + (-width) + 'px'
+					}, onMoveStop);
+				}
+			}
+
+			function moveLeft() {
+				if (!moving) {
+					moving = true;
+					pre = cur;
+					cur--;
+					if (cur < 0) {
+						cur = count - 1;
+					}
+					$(children[cur]).css("left", -width * (cur + 1));
+					$(children[cur]).animate({
+						left: '+=' + width + 'px'
+					});
+					$(children[pre]).animate({
+						left: '+=' + width + 'px'
+					}, onMoveStop);
+				}
+			}
+
+			function onMoveStop() {
+				$(dots[pre]).removeClass("active");
+				$(dots[cur]).addClass("active");
+				moving = false;
+			}
+
+			function console(info, clear) {
+				if (clear)
+					$("#info").text("");
+				$("#info").text($("#info").text() + info);
+			}
+		</script>
+	</body>
+
+</html>

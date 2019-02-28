@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg">
+
+<path d="M100 100
+C105 105 110 110 115 115 115 100 100 95 95 90"
+style="fill:white;stroke:red;stroke-width:2"/>
+
+<line x1="100" y1="100" x2="101" y2="101"
+style="stroke:green;stroke-width:1"/>
+
+<line x1="110" y1="110" x2="111" y2="111"
+style="stroke:green;stroke-width:1"/>
+
+</svg>

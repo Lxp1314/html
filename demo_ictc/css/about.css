@@ -1,0 +1,195 @@
+
+
+.intro_content{ width:1009px; color:#2f3439;text-align: center; margin:auto; font-family:"微软雅黑",'Microsoft Yahei'; }
+.intro_content p{ color:#2f3439; line-height:28px; padding-bottom:28px; text-indent:2em; font-weight:normal; }
+.intro_content p{ color:#2f3439; line-height:28px; padding-bottom:28px; text-indent:2em; font-weight:normal; }
+
+
+
+
+
+.zizhi_tab {
+	width:100%;
+	
+}
+.zizhi_tab .zizhi_titile {
+	border-bottom:3px solid #fff;
+}
+.zizhi_tab tr td{
+	padding-top:12px;
+	padding-bottom:12px;
+	border-bottom:1px solid #d9d9d9;
+	font-size:14px;
+	line-height:14px;
+}
+
+
+/*表头样式*/
+.zizhi_tab td.zizhi_tab0 {
+	width:9px;
+	border-bottom:2px solid #C30;
+	padding-left:0px;
+	padding-right:0px;
+}
+.zizhi_tab td.zizhi_tab1 {
+	width:63px;
+	border-bottom:2px solid #2f3439;
+	text-align:center;
+}
+.zizhi_tab td.zizhi_tab2 {
+	width:360px;
+	border-bottom:2px solid #d84a37;
+	padding-left:12px;
+}
+.zizhi_tab td.zizhi_tab3 {
+	border-bottom:2px solid #3683e2;
+	padding-left:12px;
+}
+
+/*表格头部样式*/
+.zizhi_tab td.zi_blue {
+	background-color:#5b9ae7;
+	color:#fff;
+	text-align:center;
+	border-right:1px solid #fff;
+}
+.zizhi_tab td.zi_blue_num {
+	background-color:#3281e1;
+	padding-left:12px;
+	color:#fff;
+	border-right:1px solid #fff;
+}
+.zizhi_tab tr td.blue {
+	color:#00479d;
+}
+.zizhi_tab tr td.td_blank {
+	height:2px;
+	padding:0;
+	border:0;
+}
+
+.zi_blue{ color:#00479d; font-size:14px; padding:8px 10px 5px 10px; font-weight:normal;}
+
+
+.zizhi_tab td.zi_yellow {
+	background-color:#fb9632;
+	color:#fff;
+	text-align:center;
+	border-right:1px solid #fff;
+}
+
+.zizhi_tab td.zi_yellow_num {
+	background-color:#e67b12;
+	padding-left:12px;
+	color:#fff;
+	border-right:1px solid #fff;
+}
+
+
+/*单行样式*/
+.odd .zi_gray {
+	background-color:#f4f4f4;
+	padding-left:12px;
+	border-left:#eaeaea 1px solid;
+}
+.odd .zi_gray_num {
+	background-color:#d9d9d9;
+	text-align:center;
+}
+
+/*偶行样式*/
+.even .zi_white {
+	background-color:#fff;
+	padding-left:12px;
+	border-left:#eaeaea 1px solid;
+}
+.even .zi_white_num {
+	background-color:#ececec;
+	text-align:center;
+	
+}
+/*左右边距*/
+.paddLR {
+	padding-left:12px;
+	padding-right:18px;
+}
+
+/*蓝色字体样式*/
+.blue {
+	color:#00479d;
+}
+
+.ry_biaohao_odd{ display:inline; width:63px; margin-left:10px; padding-top:8px; padding-bottom:22px; background:#ececec; text-align:center;}
+.zz_jiguan_odd{ width:259px; height:41px; border-bottom:1px solid #d9d9d9; background-color:#f4f4f4; color:#2f3439; border-left:#eaeaea 1px solid; font-size:14px;}
+.zz_xuhao_odd{ width:63px; height:42px; background-color:#d9d9d9; text-align:center; color:#2f3439; font-size:14px;}
+.zz_mingcheng_odd{ width:360px; height:41px; border-bottom:1px solid #d9d9d9;background-color:#f4f4f4; color:#00479d; font-size:14px;}
+.ry_odd{ width:709px; border-bottom:1px solid #d9d9d9;}
+
+.odd .ry_gray {
+	background-color:#f4f4f4;
+}
+.odd .ry_gray_num {
+	background-color:#d9d9d9;
+	text-align:center;
+}
+.odd .zi_gray {
+	background-color:#f4f4f4;
+	padding-left:12px;
+	border-left:#eaeaea 1px solid;
+}
+.odd .zi_gray_num {
+	background-color:#d9d9d9;
+	text-align:center;
+}
+
+.ry_biaohao_even{ display:inline; width:63px; margin-left:10px; padding-top:8px; padding-bottom:22px; background:#d9d9d9; text-align:center;}
+.ry_even{ width:709px; background-color:#f4f4f4; border-bottom:1px solid #d9d9d9; }
+.zz_jiguan_even{ width:259px; height:41px; border-bottom:1px solid #d9d9d9; background-color:#fff; color:#2f3439; border-left:#eaeaea 1px solid; font-size:14px;}
+.zz_xuhao_even{ width:63px; height:42px; background-color:#ececec; text-align:center; color:#2f3439; font-size:14px;}
+.zz_mingcheng_even{ width:360px; height:41px; border-bottom:1px solid #d9d9d9;background-color:#fff; color:#00479d; font-size:14px;}
+/*------偶行样式---------*/
+.even .ry_gray_num {
+	background-color:#ececec;
+	text-align:center;
+	padding-left:0;
+	padding-right:0;
+}
+.even .ry_white {
+	background-color:#fff;
+}
+
+/*偶行样式*/
+.even .zi_white {
+	background-color:#fff;
+	padding-left:12px;
+	border-left:#eaeaea 1px solid;
+}
+.even .zi_white_num {
+	background-color:#ececec;
+	text-align:center;
+	
+}
+
+@keyframes aa{
+	from{background-position: 0% 0%;}
+	to{background-position: 0% 100%;}
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.swiper-slide {
+    background-position: 0% 0%;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    /*animation: aa 0.6s forwards;*/
+}
+
+.swiper-slide:hover{
+	background-position: 0% 100%;
+	/*transition: background-position 0.6s ease;*/
+	animation: aa 0.6s forwards;
+	/*background-position: bottom;*/
+}

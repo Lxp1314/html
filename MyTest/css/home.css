@@ -1,0 +1,31 @@
+#img1
+{
+width:200px;
+height:200px;
+border-radius:100px;
+box-shadow: 15px 15px 5px #888888;
+background-image:url(http://p2.so.qhimg.com/bdr/_240_/t0139e9d0ebd4c2755c.jpg);
+background-repeat:repeat;
+background-size:50% 50%;
+}
+#img2
+{
+width:200px;
+height:200px;
+border-radius:100px;
+box-shadow: 15px 15px 5px #888888;
+background-image:url(http://www.qq1234.org/uploads/120509/1-1205091G605W6.jpg);
+background-repeat:repeat;
+background-size:100% 100%;
+}
+#img3
+{
+width:200px;
+height:200px;
+background-size:100px 100px,200px 200px;
+border-radius:100px;
+box-shadow: 5px 5px 5px rgb(215,143,146);
+background-image:url(http://p2.so.qhimg.com/bdr/_240_/t014b75edb5229edc0c.jpg),url(http://www.qq1234.org/uploads/120509/1-1205091G605W6.jpg);
+background-repeat:no-repeat;
+background-position:center;
+}

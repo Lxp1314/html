@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div style="height: 3000px;"></div>
+		<button type="button" id="mybtn">11111</button>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script>
+			//			$(document).ready(function(){
+			//					  $('#mybtn').on('click', function(e) {
+			//						$(window).animate({scrollTop:0}, 'slow');
+			//						return false;
+			//					  });
+			//					});
+			$(document).ready(function($) {
+
+				$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); // 这行是 Opera 的补丁, 少了它 Opera 是直接用跳的而且画面闪烁 by willin
+
+				$('#mybtn').click(function() {
+					$body.animate({
+						scrollTop: 0
+					}, 1000);
+					return false; // 返回false可以避免在原链接后加上#
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

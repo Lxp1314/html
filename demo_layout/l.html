@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.showborder {
+				border: solid 1px red;
+				box-sizing: border-box;
+			}
+			
+			.container {}
+			
+			.header {
+				position: absolute;
+				height: 100px;
+				left: 0;
+				right: 0;
+			}
+			
+			.bodyer {
+				position: absolute;
+				top: 100px;
+				left: 0;
+				right: 0;
+				bottom: 60px;
+			}
+			
+			.bodyer .left {
+				position: absolute;
+				width: 100px;
+				top: 0;
+				bottom: 0;
+			}
+			
+			.bodyer .main {
+				position: absolute;
+				left: 100px;
+				right: 100px;
+				top: 0;
+				bottom: 0;
+			}
+			
+			.bodyer .right {
+				position: absolute;
+				width: 100px;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+			
+			.footer {
+				position: absolute;
+				height: 60px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+			
+			.color1{background-color: #efefef;}
+			.color2{background-color: #ababab;}
+			.color3{background-color: #fefefe;}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header showborder color1">header</div>
+			<div class="bodyer showborder">
+				<div class="left showborder color2">left</div>
+				<div class="main showborder color3">main</div>
+				<div class="right showborder color2">right</div>
+			</div>
+			<div class="footer showborder color1">footer</div>
+		</div>
+	</body>
+
+</html>

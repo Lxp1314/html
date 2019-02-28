@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="320" height="320" version="1.1"
+xmlns="http://www.w3.org/2000/svg" style="background:#e4e4e4;">
+    
+    <path d="M160 80 C 140 70, 120 130, 160 120" stroke="black" fill="pink"/>
+    <path d="M160 80 C 180 70, 200 130, 160 120" stroke="black" fill="pink"/>
+    <path d="M145 120 V 180 " stroke="black" fill="pink"/>
+    <path d="M175 120 V 180 " stroke="black" fill="pink"/>
+    
+    <text x="15" y="25" font-size="20" text-anchor="start" fill="green">看我画了什么~</text>  
+    <text x="10" y="280">
+    	Hello World!
+	  <tspan x="100 130 140"  font-weight="bold" fill="red">This is bold and red</tspan>
+	</text>
+
+	<text x="10" y="10">Hello World!
+	 <tspan rotate="10 20 45"  font-weight="bold" fill="red">This is bold and red</tspan>
+	</text>
+</svg>

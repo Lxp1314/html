@@ -1,0 +1,113 @@
+.swiper-container {
+	width: 100%;
+}
+
+.swiper1 img {
+	width: 100%;
+}
+
+.chart {
+	width: 720px;	
+	height: 720px;
+	margin-left: -50px;
+	margin-top: -20px;
+}
+
+g {
+	cursor: pointer;
+}
+
+.doughnut_title{
+	text-align: center; 
+	font-size: 3rem; 
+	margin-top: 100px; 
+	margin-bottom: 40px;
+}
+
+.doughnut_content{
+	font-size: 18px; 
+	margin: 0; 
+	line-height: 36px;
+}
+
+.news_img{
+	
+}
+.news_img img{ 
+	width: 100%;
+	height: 100%;
+}
+.news{ 
+	margin: 0px -15px;
+}
+
+@keyframes news_text_hover{
+	0% { color: rgb(31,31,31);}
+	25%{color: rgb(31,31,255);}
+	50%{color: rgb(31,255,31);}
+	75%{color: rgb(255,31,31);}
+	100%{color: rgb(31,31,31);}
+	/*from{color: rgb(31,31,31);}
+	to{color: rgb(104,192,255);}*/
+}
+
+.news a{
+	text-decoration: none;
+}
+.news a:hover{
+	color: rgb(104,192,255);
+	/*animation: news_text_hover 0.4s 1 forwards;*/
+}
+
+.news ul{
+	list-style: disc;
+	padding: 0px;
+}
+.news ul li{
+	margin: 0px;
+	padding: 0px;
+}
+.news .news_title {
+	font-size: 1.8rem;
+	line-height: 40px;
+}
+.news .news_key{
+	font-size: 1.8rem;
+	color: #68c0ff;
+	font-weight: bold;
+}
+
+.news .news_time{
+	float: right;
+	padding-top: 15px;
+	font-size: 1rem;
+	/*line-height: 3rem;*/
+}
+.news .news_more{
+	float: right;
+	font-size: 1.8rem;
+	margin-top: 20px;
+	text-decoration: none;
+}
+.swiper2 .swiper-slide{
+
+}
+.swiper2 img{width: 100%; height: 80%;}
+
+.swiper2 .company{
+	width: 100%;
+	/*height: 80px;*/
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+.swiper2 .company .p_company_title{
+	margin: 0;
+  	padding: 20px;
+  	font-size: 1.8rem;
+}
+.swiper2 .company_mb{
+	margin-bottom: 30px;
+}

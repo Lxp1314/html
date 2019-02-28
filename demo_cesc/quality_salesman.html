@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>CESC-质量信息反馈</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-table.css">
+		<link rel="stylesheet" href="css/fileinput.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-table.js"></script>
+		<script src="js/bootstrap-table-zh-CN.js"></script>
+		<script src="js/fileinput.js"></script>
+		<script src="js/fileinput.zh.js"></script>
+		<script src="js/common.js"></script>
+		<style type="text/css">
+			.files {
+				width: 16px;
+				height: 16px;
+			}
+			
+			.content-box{
+				border:solid 1px #dddddd; border-radius: 5px; margin-top: 5px;
+			}
+			
+			ul.timeline {
+				list-style-type: none;
+				background: url("image/time-line.png") repeat-y scroll 50px 0px transparent;
+				padding: 0;
+				margin: 10px;
+			}
+			
+			ul.timeline li {
+				position: relative;
+				margin-bottom: 20px;
+			}
+			
+			ul.timeline li .time {
+				position: absolute;
+				width: 66px;
+				background-color: #428bca;
+				color: white;
+				text-align: center;
+				font-size: 75%;
+				font-weight: 700;
+				padding: 3px 5px;
+				border-radius: 5px;
+				left: 15px;
+			}
+			
+			ul.timeline li .time-content {
+				margin-left: 95px;
+				padding: 0px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<nav id="column-left">
+				<div style="width: 130px; height: 130px; margin: 40px 35px; border-radius: 50% 50%; background-color: white; text-align: center;">
+					<img src="image/logo_blue.png" style=" width: 60%; margin-top: 25%;" />
+				</div>
+				<h3 class="text-center" style="margin-bottom: 30px; padding: 0px 8px; line-height: 1.2em;">北京拜克洛克科技有限公司</h3>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<span class="badge badge2">&gt;</span> 订单查询
+					</a>
+					<div class="list-group list-group-child">
+						<a href="main.html" class="list-group-item"><span class="badge badge2">&gt;</span>在线订单</a>
+						<a href="main.html?state=1" class="list-group-item"><span class="badge badge2">&gt;</span>完成订单</a>
+					</div>
+					<a href="order.html" class="list-group-item"><span class="badge badge2">&gt;</span>在线下单</a>
+					<a href="quality.html" class="list-group-item active"><span class="badge badge2">&gt;</span><span class="badge badge-danger">2</span>质量信息</a>
+					<a href="service2.html" class="list-group-item"><span class="badge badge2">&gt;</span>智能客服</a>
+					<a href="service.html" class="list-group-item"><span class="badge badge2">&gt;</span>售前咨询</a>
+					<a href="chat.html" class="list-group-item"><span class="badge badge2">&gt;</span>行业交流</a>
+				</div>
+			</nav>
+			<div id="content">
+				<div class="visible-xs" style="height: 48px; background-color: #1757b9; position: relative;">
+					<div style="position: absolute; width: 36px; height: 36px; left: 6px; top: 6px; background-color: white; border-radius: 50% 50%; text-align: center;">
+						<img src="image/logo_blue.png" style="height: 24px; margin-top: 6px;" />
+					</div>
+					<div style="position: absolute; width: 36px;height: 36px; right: 6px; top: 6px; background-color: ;">
+						<button type="button" class="btn-menu" id="btn-menu">
+					            <span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					          </button>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<!--<div class="page-header">
+					  <p style="font-size: 30px;">订单查询</p>
+					</div>-->
+
+					<div class="page-header hidden-xs">
+						<ol class="breadcrumb">
+							<li>当前位置：</li>
+							<li>
+								<a href="#">首页</a>
+							</li>
+							<li>
+								<a href="#">质量信息</a>
+							</li>
+						</ol>
+					</div>
+
+					<div id="toolbar">
+						<div class="form-inline" role="form">
+							<div class="form-group">
+								<input name="search" class="form-control" type="text" placeholder="公司名称">
+							</div>
+							<div class="form-group">
+								<input name="search" class="form-control" type="text" placeholder="反馈主题">
+							</div>
+							<div class="form-group">
+								<input name="search" class="form-control" type="text" placeholder="反馈简述">
+							</div>
+							<div class="form-group hidden-xs">
+								<select class="form-control">
+									<option>反馈类型</option>
+									<option>客户需求</option>
+									<option>客户投诉</option>
+									<option>需确认</option>
+									<option>无需确认</option>
+								</select>
+							</div>
+							<button id="ok" type="submit" class="btn btn-default hidden-xs">查询</button>
+						</div>
+					</div>
+					<table id="table" 
+						data-toolbar="#toolbar" 
+						data-show-columns="true" 
+						data-height="766" 
+						data-show-add-btn="true" 
+						data-show-refresh="true" 
+						data-show-toggle="true" 
+						data-detail-view="true" 
+						data-detail-formatter="detailFormatter" 
+						data-pagination="true" 
+						data-page-size="15" 
+						data-page-list="[5,10,15,20,50]" 
+						data-pagination-first-text="首页" 
+						data-pagination-pre-text="上一页" 
+						data-pagination-next-text="下一页" 
+						data-pagination-last-text="尾页">
+						<thead>
+							<tr>
+								<th data-field="id" data-sortable="true" data-switchable="false">ID</th>
+								<th data-field="company" data-switchable="false">公司名称</th>
+								<th data-field="title" data-switchable="false">反馈主题</th>
+								<th data-field="resume" data-visible="false" >反馈简述</th>
+								<th data-field="type" data-sortable="true">反馈类别</th>
+								<th data-field="order_ids" data-formatter="idsFormatter">包含订单</th>
+								<th data-field="files" data-formatter="filesFormatter">附件</th>
+								<th data-field="time_added" data-sortable="true">反馈时间</th>
+								<th data-field="read_state" data-formatter="readStateFormatter" data-sortable="true" data-visible="false">阅读状态</th>
+								<th data-field="state" data-formatter="stateFormatter">处理状态</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="timeline" style="display: none;">
+			<ul class="timeline">
+			<li>
+				<div class="time">
+					2017-10-01
+				</div>
+				<div class="time-content">
+					声音感应模块需要升级 <a data-toggle="collapse" href="#t-1" aria-expanded="false">详情</a>
+					<div id="t-1" class="collapse bg-info content-box">
+						<div class="row">
+							<div class="col-sm-2 text-right">
+								<h5>反馈主题：</h5></div>
+							<div class="col-sm-10">
+								<h5>声音感应模块需要升级</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈简述：</h5></div>
+							<div class="col-sm-10">
+								<h5>由于产品升级到2代，声音控制模块需要同步升级，请……</h5>
+							</div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈类别：</h5></div>
+							<div class="col-sm-10">
+								<h5>客户需求</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>包含订单：</h5></div>
+							<div class="col-sm-10">
+								<h5><a href="main.html">ISB20170216000</a>,<a href="main.html">ISB20170216001</a>,<a href="main.html">ISB20170216002</a></h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>附件：</h5></div>
+							<div class="col-sm-10">
+								<h5><a href="#"> a.jpg<img class="files" src="image/files/jpg.png"></a>,<a href="#"> 需求.doc<img class="files" src="image/files/doc.png"></a>,<a href="#"> 数据.xls<img class="files" src="image/files/xls.png"></a></h5>
+								（请右键选择目标另存为下载）
+							</div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈时间：</h5></div>
+							<div class="col-sm-10">
+								<h5>2017-10-01</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>处理状态：</h5></div>
+							<div class="col-sm-10">
+								<h5>进行中</h5></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="time">
+					2017-10-02
+				</div>
+				<div class="time-content">
+					好的，之后批次会升级 <a data-toggle="collapse" href="#t-2" aria-expanded="false">详情</a>
+					<div id="t-2" class="collapse bg-info content-box">
+						<div class="row">
+							<div class="col-sm-2 text-right">
+								<h5>反馈主题：</h5></div>
+							<div class="col-sm-10">
+								<h5>声音感应模块需要升级</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈简述：</h5></div>
+							<div class="col-sm-10">
+								<h5>由于产品升级到2代，声音控制模块需要同步升级，请……</h5>
+							</div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈类别：</h5></div>
+							<div class="col-sm-10">
+								<h5>客户需求</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈时间：</h5></div>
+							<div class="col-sm-10">
+								<h5>2017-10-02</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>处理状态：</h5></div>
+							<div class="col-sm-10">
+								<h5>进行中</h5></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="time">
+					2017-10-05
+				</div>
+				<div class="time-content">
+					ok，结束反馈！ <a data-toggle="collapse" href="#t-3" aria-expanded="false">详情</a>
+					<div id="t-3" class="collapse bg-info content-box">
+						<div class="row">
+							<div class="col-sm-2 text-right">
+								<h5>反馈主题：</h5></div>
+							<div class="col-sm-10">
+								<h5>声音感应模块需要升级</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈简述：</h5></div>
+							<div class="col-sm-10">
+								<h5>由于产品升级到2代，声音控制模块需要同步升级，请……</h5>
+							</div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈类别：</h5></div>
+							<div class="col-sm-10">
+								<h5>客户需求</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>反馈时间：</h5></div>
+							<div class="col-sm-10">
+								<h5>2017-10-05</h5></div>
+							<div class="col-sm-2 text-right">
+								<h5>处理状态：</h5></div>
+							<div class="col-sm-10">
+								<h5>完成</h5></div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<button class="btn btn-info btn-xs" type="button" style="margin-left: 25px;" data-toggle="modal" data-target=".bs-example-modal-lg">添加反馈</button>
+		<button class="btn btn-warning btn-xs" type="button">结束反馈</button>
+		</div>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">添加质量反馈信息</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">反馈主题</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" placeholder="反馈主题">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">反馈简述</label>
+								<div class="col-sm-10">
+									<textarea rows="4" placeholder="反馈简述" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">反馈类别</label>
+								<div class="col-sm-10">
+									<label class="radio-inline">
+									  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 客户需求
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 客户投诉
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 需确认
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 无需确认
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">包含订单</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" placeholder="包含订单">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">附件上传</label>
+								<div class="col-sm-10">
+									<input id="input-b3" name="input-b3[]" type="file" class="file" multiple 
+	    								data-show-upload="false" data-show-caption="true" data-msg-placeholder="Select {files} for upload...">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var $table = $('#table');
+			
+			var titleArr = ['声音感应模块需要升级', 'GPS定位芯片有几张无法使用'];
+			var typeArr = ['客户需求', '客户投诉', '需确认', '无需确认'];
+			var typeProduction = ['工程', '量产'];
+			var stateArr = ['待生产', '生产中', '待结款', '已完成'];
+			
+			$(function() {
+
+				var data = [];
+				var rows = 10;
+				for(var i = 0; i < rows; i++) {
+					var id = '000000' + i;
+					var random = parseInt(Math.random() * rows);
+					//					console.log(random);
+					data[i] = {
+						"id" : i + 1,
+						"company" : i < 5 ? "ofo小黄车":"小蓝单车",
+						"title" : i < 5 ? titleArr[0] : titleArr[1],
+						"resume" : i < 5 ? "由于产品升级到2代，声音控制模块需要同步升级，请……" : "GPS定位芯片有几张无法使用，经过我们工程师调试，确定存在问题，请帮忙……",
+						"type" : i < 5 ? typeArr[0] : typeArr[1],
+						"order_ids" : ['ISB20170216000','ISB20170216001','ISB20170216002'],
+						"files" : ['a.jpg','需求.doc','数据.xls'],
+						"time_added" : i < 5 ? "2017-10-17" : "2017-10-10",
+						"read_state" : 1,
+						"read_time" : "2017-10-18",
+						"reply_id" : 1,
+						"reply_time" : "2017-10-18",
+						"root_id" : 1,
+						"state" : 1
+					};
+				}
+
+				var is_mobile = $(window).width() < 768 ? true : false;
+				$table.bootstrapTable({
+					data: data,
+					cardView: is_mobile,
+					showToggle: !is_mobile,
+					pageList: is_mobile ? [] : [5, 10, 15, 20, 50],
+					onExpandRow: function(index, row) {
+						$('[data-toggle="tooltip"]').tooltip({
+							html: true
+						});
+					},
+					onAddBtn: function(){
+						location.href = 'quality_add.html';
+					}
+				});
+
+				$("#btn-menu").on('click', function() {
+					if($("#column-left").css('margin-left') == "-200px") {
+						$("#column-left").css('margin-left', '0px');
+					} else {
+						$("#column-left").css('margin-left', '-200px');
+					}
+				});
+				
+				$('#input-b3').fileinput({
+			        language: 'zh',
+			        allowedFileExtensions: ['jpg', 'png', 'gif']
+			    });
+			});
+
+			function idsFormatter(value, row, index) {
+				if(index == -1){
+					var html = "";
+					for(var i = 0; i < value.length; i++){
+						if(i>0){
+							html += ",";
+						}
+						html += '<a href="main.html">'+ value[i] +'</a>';
+					}
+					return html;
+				}else if(index == 0){
+					return '<a href="main.html">ISB20170216000</a>,...';
+				}else{
+					return '<a href="main.html">ISB20170216000</a>';
+				}
+			}
+			function filesFormatter(value, row, index) {
+				if(index == -1){
+					var html = "";
+					for(var i = 0; i < value.length; i++){
+						if(i>0){
+							html += ",";
+						}
+						html += '<a href="#"> '+value[i]+'<img class="files" src="image/files/'+value[i].substr(value[i].indexOf(".")+1)+'.png"></a>';
+					}
+					return html;
+				}else if(index == 0){
+					return '<a href="#">下载 <img class="files" src="image/files/txt.png"></a>';
+				}else{
+					return '无';
+				}
+			}
+			
+			function readStateFormatter(value, row, index){
+				if(index<2){
+					return '<span class="label label-success">未读</span>';
+				}else{
+					return '<span class="label label-default">已读</span>';
+				}
+			}
+			
+			function stateFormatter(value, row, index){
+				if(index<2){
+					return '<a href="#">处理中 <span class="badge" style="background-color:#5cb85c">1</span></a>';
+				}else{
+					return '已关闭';
+				}
+				
+			}
+
+			function detailFormatter(index, row) {
+				if(index == 0){
+					return $('#timeline').html();
+				}else{
+					var html = '';
+				html += '<div style="padding:0px 20px 20px;">';
+				html += '<div class="row">';
+				html += '<div class="col-sm-10"><h3>反馈详情</h3></div>';
+				html += '<div class="col-sm-2"></div>';
+				html += '</div>';
+				html += '<hr style="border: none; border-top: dashed 1px #dddddd;">';
+				html += '<div class="row">' +
+						'<div class="col-sm-2 text-right"><h5>反馈主题：</h5></div>' +
+						'<div class="col-sm-10"><h5>' + row.title + '</h5></div>' +
+						'<div class="col-sm-2 text-right"><h5>反馈简述：</h5></div>' +
+						'<div class="col-sm-10"><p class="bg-info" style="padding:15px;">' + row.resume + '</p></div>' +
+						'<div class="col-sm-2 text-right"><h5>反馈类别：</h5></div>' +
+						'<div class="col-sm-10"><h5>' + row.type + '</h5></div>' +
+						'<div class="col-sm-2 text-right"><h5>包含订单：</h5></div>' +
+						'<div class="col-sm-10"><h5>' + idsFormatter(row.order_ids,row,-1) + '</h5></div>' +
+						'<div class="col-sm-2 text-right"><h5>附件：</h5></div>' +
+						'<div class="col-sm-10"><h5>' + filesFormatter(row.files, row,-1) + '</h5></div>' +
+						'<div class="col-sm-2 text-right"><h5>反馈时间：</h5></div>' +
+						'<div class="col-sm-10"><h5>2017-10-01</h5></div>' +
+//						'<div class="col-sm-2 text-right"><h5>阅读状态：</h5></div>' +
+//						'<div class="col-sm-10"><h5>已读</h5></div>' +
+//						'<div class="col-sm-2 text-right"><h5>阅读时间：</h5></div>' +
+//						'<div class="col-sm-10"><h5>2017-10-02</h5></div>' +
+						'<div class="col-sm-2 text-right"><h5>处理状态：</h5></div>' +
+						'<div class="col-sm-10"><h5>进行中</h5></div>' +
+						'</div>';
+				html += '<hr style="border: none; border-top: dashed 1px #dddddd;">';
+
+				html += '</div>';
+				return html;
+				}
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+		<link href="css/bootsnav.css" rel="stylesheet">
+		<link href="css/site.css" rel="stylesheet" />
+		<style type="text/css">
+			.form-model {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+				z-index: 101;
+				background-color: rgba(0, 0, 0, 0.5);
+				overflow-y: scroll;
+				display: none;
+			}
+			
+			.form-model .row{
+				height: 50px;
+			}
+			
+			.form-model label{
+				text-align: right;
+				font-size: 2.4rem;
+				line-height: 40px;
+				color: #478afa;
+				font-weight: normal;
+			}
+			.form-model input[type="text"]{
+				height: 40px;
+				width: 80%;
+				background-color: white;
+				border: solid 1px #dcdadb;
+				border-radius: 8px;
+				padding: 5px 15px;
+			}
+			.form-model input[type="radio"]{
+				height: 20px;
+				width: 20px;
+				border: solid 1px #dcdadb;
+				margin-left: 15px;
+			}
+			.form-model select{
+				height: 40px;
+				background-color: white;
+				border: solid 1px #dcdadb;
+				border-radius: 8px;
+			}
+			.form-model textarea{
+				/*height: 40px;*/
+				width: 80%;
+				background-color: white;
+				border: solid 1px #dcdadb;
+				border-radius: 8px;
+				padding: 5px 15px;
+			}
+			.form-model .r-label{
+				font-size: 2rem;
+				line-height: 40px;
+				color: rgb(31,31,31);
+			}
+			.form-model .s_required{
+				color: red;
+				font-size: 2.4rem;
+				/*vertical-align: text-top;*/
+			}
+			#form-model-close img{
+				width: 100%;
+				height: 100%;
+				transition: transform 1s;
+			}
+			#form-model-close img:hover{
+				
+				transform: rotate(90deg);
+			}
+			:focus {
+			    outline: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Start Navigation -->
+		<nav class="navbar navbar-default navbar-abs bootsnav">
+			<div class="container-bg">
+				<div class="container">
+					<!-- Start Header Navigation -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="#brand"><img src="img/logo.png" class="logo" alt=""></a>
+					</div>
+					<!-- End Header Navigation -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">关于信唐</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="honors.html">资质荣誉</a>
+									</li>
+									<li>
+										<a href="about.html">关于我们</a>
+									</li>
+									<li>
+										<a href="gongyi.html">公益</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">产品与服务</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="smartCity.html">智慧城市</a>
+									</li>
+									<li>
+										<a href="gBigData.html">政府大数据</a>
+									</li>
+									<li>
+										<a href="superCase.html">经典案例</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="employment.html">招纳贤士</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid" style="margin-top: 128px;">
+			<div class="" style="margin:0 auto;width: 1188px; height: 466px; background-image: url(img/gongyi/letterPaper1.png);background-repeat:repeat-y ; background-size: 100%;">
+				<div class="container" style="width: 1000px;">
+					<div class="" style=" margin-bottom: 20px;">
+						<h1 style="margin:50px 0;font-size: 36px;font-weight: normal;text-align: center;letter-spacing: 4px;color: #478afa;">
+							“星火燎原·情系学子”助学公益计划
+						</h1>
+						<i style="display: block;height: 1px; width: 100%;background-color:  #478afa;"></i>
+					</div>
+					<h5 style="font-size: 18px;text-align: center;font-weight:normal; ">
+							<p style="line-height: 30px;letter-spacing: 1px;">
+								“新疆在‘十三五’期间，基本普及15年教育，基本实现教育现代化。”这是2016年新疆维吾尔自治区两会政府工作报告中提出的未来5年新疆教育发展目标和任务，而在15年免费义务教育之外，仍会有一些力求上进、品学兼优、希望能够在大学中继续接受高等教育的莘莘学子，因家境贫困而失去继续深造的可能，失去了改变人生的机会。
+							</p>
+							<p style="line-height: 30px;letter-spacing: 1px;">
+								由新疆维吾尔区自治区安全生产监督管理局和信唐普华科技有限公司发起成立“星火燎原·情系学子”精准助学公益项目，致力于支持中国教育事业的发展，帮助贫困地区品学兼优的初中应届毕业生顺利完成高中学业，走入大学殿堂。
+							</p>
+						</h5>
+					<h1 style="margin:50px 0;font-size: 36px;font-weight: normal;text-align: center;letter-spacing: 4px;color: #478afa;">
+							我们在行动
+						</h1>
+					<i style="display: block;height: 1px; width: 100%;background-color:  #478afa;;"></i>
+				</div>
+			</div>
+			<!--图1-->
+			<div class="" style="margin:0 auto;width: 1188px; height: 276px;background-image: url(img/gongyi/letterPaper2.png);background-repeat: no-repeat; background-size: 100%;">
+				<div class="container" style="width: 1000px;">
+					<div class="" style=" margin:70px 120px 100px 250px;">
+						<h5 style="font-size: 18px;text-align: left;font-weight:normal; ">
+								<p style="line-height: 30px;letter-spacing: 5px;">
+									1、一点力所能及的善举可以改变另一个人的命运，而受教育就是我们能够提供给新疆学子最好的改变自己家庭生活条件和自己命运的机会。	
+								</p>
+							</h5>
+					</div>
+				</div>
+			</div>
+			<!--图二-->
+			<div class="" style="margin:0 auto;width: 1188px; height: 340px;background-image: url(img/gongyi/letterPaper3.png);background-repeat: no-repeat; background-size: 100%;">
+				<div class="container" style="width: 1000px;">
+					<div class="" style=" margin:100px 250px 100px 130px;">
+						<h5 style="font-size: 18px;text-align: left;font-weight:normal; ">
+								<p style="line-height: 30px;letter-spacing: 5px;">
+									2、“星火燎原·情系学子”精准助学公益项目的建立，旨在通过释放我们的一点力量，帮助一个有志学子实现从高中毕业的懵懂少年到受过大学深度教育，成为具有独立生存、思考能力的青年的转变。 
+								</p>
+							</h5>
+					</div>
+				</div>
+			</div>
+			<!--图3-->
+			<div class="" style="margin:0 auto;width: 1188px; height: 313px;background-image: url(img/gongyi/letterPaper4.png);background-repeat: repeat-y; background-size: 100%;">
+				<div class="container" style="width: 1000px;">
+					<div class="" style=" margin:70px 120px 100px 250px;">
+						<h5 style="font-size: 18px;text-align: left;font-weight:normal; ">
+								<p style="line-height: 30px;letter-spacing: 5px;">
+									3、着眼于未来，我们希望通过知识的力量可以改变一个人的眼界和胸怀，让来自贫困地区的新疆学子，真正认识我们的祖国的和谐和强大，了解到和平安定的重要和美好。
+								</p>
+							</h5>
+					</div>
+				</div>
+			</div>
+			<!--心愿单-->
+			<div class="" style="margin: 0 auto;width: 1188px; height: 519px;background-image: url(img/gongyi/letterPaper5.png);background-repeat:repeat-y ; background-size: 100%;">
+				<div class="container" style="width: 1000px;padding-bottom: 300px;">
+					<div class="" style=" margin-bottom: 20px;">
+						<h1 style="margin:20px 0;font-size: 36px;font-weight: normal;text-align: center;letter-spacing: 4px;color: #478afa;">
+							心愿单
+						</h1>
+						<i style="display: block;height: 1px; width: 100%;background-color:  #478afa;"></i>
+					</div>
+					<h5 style="font-size: 18px;text-align: center;font-weight:normal; ">
+							<p style="line-height: 30px;letter-spacing: 1px;">
+								“高中”你也许觉得百般愁，千般苦，你会抱怨6点晨读、10点晚课的劳累，但你终究能去到自己梦想的大学。而他们却因为经济原因求学困难。
+							</p>
+							<p style="line-height: 30px;letter-spacing: 1px;">
+								大爱有“疆”，爱心零距离 ，如果您身边有需要帮助的学生或者您想为自己争取一次筑梦的机会，请联系我们说出您的心愿。  
+							</p>
+						</h5>
+				</div>
+			</div>
+			<!--按钮心愿单-->
+			<div class="" style="position: relative; margin: 0 auto;width: 1188px; height: 344px;background-image: url(img/gongyi/letterPaper6.png);background-repeat:no-repeat ; background-size: 100%;">
+				<button type="button" id="btn_show_model" style="background-color: #478bfa; color: white; padding: 10px 15px; width: 300px; border: none; border-radius: 15px; position: absolute; top: 0; left: 50%; margin-left: -150px; font-size: 2.4rem;">心愿单</button>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1">
+						<ul>
+							<li class="title">联系我们</li>
+							<li>地址：北京市海淀区知春路甲48号盈都大厦B座20层</li>
+							<li>电话：（010）5873 1219</li>
+							<li>热线：4008045108</li>
+							<li>邮箱：service@info-itic.com.cn</li>
+							<li>邮编：100086</li>
+
+						</ul>
+					</div>
+					<div class="col-md-5 col-md-offset-1">
+						<ul>
+							<li class="title">版权信息</li>
+							<li>http://www.info-itic.com.cn</li>
+							<li>京公网安备11010802011386号</li>
+							<li>京ICP备13039065号</li>
+							<li>Copyright 2013 ITIC , All Rights Reserved</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--描述：侧边浮动栏 返回顶部-->
+		<div class="side-bar visible-lg">
+			<a href="#" class="icon-chat" style="border-radius: 10px;">微信
+				<div class="chat-tips">
+					<!--<i>微信订阅号</i>-->
+					<img src="img/icon/qrcode_wechat.jpg" alt="微信订阅号">
+				</div>
+			</a>
+			<a href="#" class="icon-weibo" style="border-radius: 10px; display: none;">weibo</a>
+			<a href="#" class="icon-contact" style="border-radius: 10px;">mail</a>
+			<a href="#" class="icon-back-to-top" style="border-radius: 10px;"> </a>
+		</div>
+
+		<div class="form-model">
+			<div style="position:relative; width:861px; height: 925px; margin: 40px auto 0px; overflow: hidden; background-image: url(img/gongyi/xinyuandanBG.png);">
+				<div id="form-model-close" style="position: absolute; width: 68px; height: 68px; right: 0px; top:68px; cursor: pointer;">
+					<img src="img/icon_close.png"/>
+				</div>
+				<p class="p_title color2" style="margin-top: 140px; margin-bottom: 0px;">心愿单</p>
+				<div style="text-align: left; width: 80%; margin: 0 auto;">
+					<p class="p_content text-center">请提供真实的个人信息及通信地址以便我们与您联系，您的个人资料将做保密处理</p>
+				</div>
+				<div style="width: 90%; margin: 5px auto;">
+					<form action="" method="post">
+						<div class="row">
+							<div class="col-md-3 text-right">
+								<label>姓名</label>
+							</div>
+							<div class="col-md-9">
+								<input type="text" name="" id="" value="" />
+								<span class="s_required">*</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								<label>称谓</label>
+							</div>
+							<div class="col-md-9">
+								<input type="radio" name="cw" checked="checked" /> <label class="r-label">先生</label>
+								<input type="radio" name="cw" /> <label class="r-label">女士</label>
+								<input type="radio" name="cw" /> <label class="r-label">小朋友</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								<label>手机</label>
+							</div>
+							<div class="col-md-9">
+								<input type="text" name="" id="" value="" />
+								<span class="s_required">*</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								<label>E-mail</label>
+							</div>
+							<div class="col-md-9">
+								<input type="text" name="" id="" value="" />
+								<span class="s_required">*</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								<label>地址</label>
+							</div>
+							<div class="col-md-9">
+								<select style="width:30%">
+									<option>--省份/直辖市--</option>
+								</select>
+								<select style="width:24%">
+									<option>--市--</option>
+								</select>
+								<select style="width:24%">
+									<option>--县/区--</option>
+								</select>
+								<span class="s_required">*</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								
+							</div>
+							<div class="col-md-9">
+								<input type="text" name="" placeholder="（邮政地址）" id="" value="" />
+								<span class="s_required">*</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								<label>邮编</label>
+							</div>
+							<div class="col-md-9">
+								<input type="text" name="" id="" value="" />
+								<!--<span class="s_required">*</span>-->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								<label>留言</label>
+							</div>
+							<div class="col-md-9">
+								<textarea rows="3"></textarea>
+								<span class="s_required">*</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 text-right">
+								
+							</div>
+							<div class="col-md-9">
+								<div style="width: 80%; text-align: center;">
+								<button type="button" style="background-color: #478bfa; color: white; padding: 6px 15px; width: 200px; border: none; border-radius: 10px; font-size: 2rem;">提交</button>
+									
+								</div>
+
+							</div>
+						</div>
+					</form>
+					<p class="p_title_2 color2" style=" margin: 30px 0px 0px; padding: 0;">联系我们</p>
+					<p class="p_content text-center">筑梦电话：4008045108</p>
+					<p class="p_content text-center">筑梦邮箱：gongyi@info-itic.com.cn</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootsnav.js"></script>
+		
+		<script>
+			//返回顶部
+			$(document).ready(function() {
+				
+				$("#btn_show_model").on("click",function(){
+					$(".form-model").show();
+				});
+				$("#form-model-close").on("click", function(){
+					$(".form-model").hide();
+				});
+				var $backToTop = $(".icon-back-to-top");
+				/* 隐藏回顶部按钮					  $backToTop.hide(); */
+				//					$backToTop.hide();
+				//					$(window).on('scroll', function() {
+				//						if($(this).scrollTop() > 100) { //返回顶部按钮将在用户向下滚动100像素后出现
+				//							$backToTop.fadeIn(1000);
+				//						} else {
+				//							$backToTop.fadeOut(1000);
+				//						}
+				//					});
+				$backToTop.on('click', function(e) {
+					$("html, body").animate({
+						scrollTop: 0
+					}, 500);
+					//						$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); // 这行是 Opera 的补丁, 少了它 Opera 是直接用跳的而且画面闪烁 by willin
+					//						$body.animate({
+					//							scrollTop: 0
+					//						}, 1000);
+					return false; // 返回false可以避免在原链接后加上#
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<title>Demonstration of the resolution of namespaces for animation</title>
+			<g xmlns:a="http://www.w3.org/1999/xlink">
+				<animate attributeName="a:href" xlink:href="#foo" dur="2s" to="two.png" fill="freeze" />
+			</g>
+			<g xmlns:b="http://www.w3.org/1999/xlink" xmlns:xlink="http://example.net/bar">
+				<image xml:id="foo" b:href="one.png" x="35" y="50" width="410" height="160" />
+			</g>
+		</svg>
+		<rect width="20px" height="20px">
+  <animate attributeName="width" from="0px" to="10px" dur="10s"
+           additive="sum" accumulate="sum" repeatCount="5"/>
+</rect>
+<svg width="5cm" height="3cm"  viewBox="0 0 500 300"
+     xmlns="http://www.w3.org/2000/svg" version="1.1"
+     xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <rect x="1" y="1" width="498" height="298"
+        fill="none" stroke="blue" stroke-width="2" />
+
+  <path id="path1" d="M100,250 C 100,50 400,50 400,250"
+        fill="none" stroke="blue" stroke-width="7.06"  />
+  <circle cx="100" cy="250" r="17.64" fill="blue"  />
+  <circle cx="250" cy="100" r="17.64" fill="blue"  />
+  <circle cx="400" cy="250" r="17.64" fill="blue"  />
+  <path d="M-25,-12.5 L25,-12.5 L 0,-87.5 z"
+        fill="yellow" stroke="red" stroke-width="7.06"  >
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto" >
+       <mpath xlink:href="#path1"/>
+    </animateMotion>
+  </path>
+</svg>
+<svg width="4cm" height="2cm" viewBox="0 0 400 200"
+     xmlns="http://www.w3.org/2000/svg"
+     onload="StartAnimation(evt)" version="1.1">
+  <script type="application/ecmascript"><![CDATA[
+    var timevalue = 0;
+    var timer_increment = 50;
+    var max_time = 5000;
+    var text_element;
+    function StartAnimation(evt) {
+      text_element = evt.target.ownerDocument.getElementById("TextElement");
+      ShowAndGrowElement();
+    }
+    function ShowAndGrowElement() {
+      timevalue = timevalue + timer_increment;
+      if (timevalue > max_time)
+        return;
+      // Scale the text string gradually until it is 20 times larger
+      scalefactor = (timevalue * 20.) / max_time;
+      text_element.setAttribute("transform", "scale(" + scalefactor + ")");
+      // Make the string more opaque
+      opacityfactor = timevalue / max_time;
+      text_element.setAttribute("opacity", opacityfactor);
+      // Call ShowAndGrowElement again <timer_increment> milliseconds later.
+      setTimeout("ShowAndGrowElement()", timer_increment)
+    }
+    window.ShowAndGrowElement = ShowAndGrowElement
+  ]]></script>
+  <rect x="1" y="1" width="398" height="198"
+        fill="none" stroke="blue" stroke-width="2"/>
+  <g transform="translate(50,150)" fill="red" font-size="7">
+    <text id="TextElement">SVG</text>
+  </g>
+</svg>
+	</body>
+
+</html>

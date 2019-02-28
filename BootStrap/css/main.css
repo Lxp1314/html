@@ -1,0 +1,61 @@
+.box {
+	border: solid 1px #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 0px 10px 10px;
+}
+.mt1 {
+	margin-top: 1px;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mr5 {
+	margin-right: 5px;
+}
+.mb5 {
+	margin-bottom: 5px;
+}
+.ml5 {
+	margin-left: 5px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.p15 {
+	padding: 15px;
+}
+.p10{
+	padding: 10px;
+}
+.h100 {
+	height: 100px;
+}
+.w140 {
+	width: 140px;
+}
+.h140 {
+	height: 140px;
+}
+.w300 {
+	width: 300px;
+}
+.h300 {
+	height: 300px;
+}
+.w96 {
+	width: 96px;
+}
+.col-3 {
+	width: 25%;
+	float: left;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>CESC-质量信息反馈</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-table.css">
+		<link rel="stylesheet" href="css/fileinput.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-table.js"></script>
+		<script src="js/bootstrap-table-zh-CN.js"></script>
+		<script src="js/fileinput.js"></script>
+		<script src="js/fileinput.zh.js"></script>
+		<script src="js/common.js"></script>
+		<style type="text/css">
+			.files {
+				width: 16px;
+				height: 16px;
+			}
+			
+			.content-box{
+				border:solid 1px #dddddd; border-radius: 5px; margin-top: 5px;
+			}
+			
+			ul.timeline {
+				list-style-type: none;
+				background: url("image/time-line.png") repeat-y scroll 50px 0px transparent;
+				padding: 0;
+				margin: 10px;
+			}
+			
+			ul.timeline li {
+				position: relative;
+				margin-bottom: 20px;
+			}
+			
+			ul.timeline li .time {
+				position: absolute;
+				width: 66px;
+				background-color: #428bca;
+				color: white;
+				text-align: center;
+				font-size: 75%;
+				font-weight: 700;
+				padding: 3px 5px;
+				border-radius: 5px;
+				left: 15px;
+			}
+			
+			ul.timeline li .time-content {
+				margin-left: 95px;
+				padding: 0px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<nav id="column-left">
+				<div style="width: 130px; height: 130px; margin: 40px 35px; border-radius: 50% 50%; background-color: white; text-align: center;">
+					<img src="image/head/ofo.jpg" style=" width: 60%; margin-top: 25%;" />
+				</div>
+				<h4 class="text-center left-company">ofo小黄车</h4>
+				<div class="left-company-info">
+					<!--<div class="row" style="border-top: solid 1px white;"></div>-->
+					<div class="row">
+						<div class="col-sm-5 text-right no-padding">订单概况：</div>
+						<div class="col-sm-7 no-padding">
+							<span class="label label-success">总订单数：360</span><br />
+							<span class="label label-warning">完成订单：200</span><br />
+							<span class="label label-danger">在线订单：160</span><br />
+						</div>
+						<div class="col-sm-5 text-right no-padding">公司名称：</div>
+						<div class="col-sm-7 no-padding">
+							ofo小黄车
+						</div>
+						<div class="col-sm-5 text-right no-padding">用户名称：</div>
+						<div class="col-sm-7 no-padding">
+							ofo黄总
+						</div>
+						<div class="col-sm-5 text-right no-padding">用户权限：</div>
+						<div class="col-sm-7 no-padding">
+							A级
+						</div>
+						<div class="col-sm-5 text-right no-padding">子账号数量：</div>
+						<div class="col-sm-7 no-padding">
+							3
+						</div>
+					</div>
+				</div>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<span class="badge badge2">&gt;</span> 订单查询
+					</a>
+					<div class="list-group list-group-child">
+						<a href="main.html" class="list-group-item"><span class="badge badge2">&gt;</span>在线订单</a>
+						<a href="main.html?state=1" class="list-group-item"><span class="badge badge2">&gt;</span>完成订单</a>
+					</div>
+					<a href="order.html" class="list-group-item active"><span class="badge badge2">&gt;</span>在线下单</a>
+					<a href="quality.html" class="list-group-item"><span class="badge badge2">&gt;</span><span class="badge badge-danger">2</span>质量信息</a>
+					<a href="service2.html" class="list-group-item"><span class="badge badge2">&gt;</span>智能客服</a>
+					<a href="service.html" class="list-group-item"><span class="badge badge2">&gt;</span>售前咨询</a>
+					<a href="chat.html" class="list-group-item"><span class="badge badge2">&gt;</span>行业交流</a>
+				</div>
+			</nav>
+			<div id="content">
+				<div class="visible-xs" style="height: 48px; background-color: #1757b9; position: relative;">
+					<div style="position: absolute; width: 36px; height: 36px; left: 6px; top: 6px; background-color: white; border-radius: 50% 50%; text-align: center;">
+						<img src="image/logo_blue.png" style="height: 24px; margin-top: 6px;" />
+					</div>
+					<div style="position: absolute; width: 36px;height: 36px; right: 6px; top: 6px; background-color: ;">
+						<button type="button" class="btn-menu" id="btn-menu">
+					            <span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					          </button>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<!--<div class="page-header">
+					  <p style="font-size: 30px;">订单查询</p>
+					</div>-->
+
+					<div class="page-header hidden-xs">
+						<ol class="breadcrumb">
+							<li>当前位置：</li>
+							<li>
+								<a href="#">首页</a>
+							</li>
+							<li>
+								<a href="order.html">在线下单</a>
+							</li>
+							<li>
+								<a href="#">生产订单</a>
+							</li>
+						</ol>
+					</div>
+					<div style="background-color: #f5f5f5; overflow: hidden; border: solid 1px #d6d6d6; border-radius: 3px; margin-top: 18px;">
+						<div style="width: 100%; padding: 10px; background-color: white; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom: solid 1px #d6d6d6;">
+							<span>合同属性：</span>
+							<button class="btn btn-danger btn-xs" style="margin-left: 30px;">工程</button>
+							<button class="btn btn-default btn-xs" style="margin-left: 30px;">量产</button>
+						</div>
+						<div style="width:50%; text-align: center; min-height: 400px; background-color: ; float: left; border-right: solid 1px #d6d6d6;">
+							<br>
+							<br>
+							<span style="font-size: 30px; line-height: 1.1; font-weight: 500;">合同头部</span>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<span style="font-size: 30px; line-height: 1.1; font-weight: 500; vertical-align: middle;">订单内容</span>
+							<button class="btn btn-danger" type="button">添加</button>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							<span style="font-size: 30px; line-height: 1.1; font-weight: 500;">合同尾部</span>
+							
+						</div>
+						<div style="width:50%; min-height: 400px; background-color: ; float: right; ">
+							<div style="height: 300px;">
+								<style type="text/css">
+									.input-type{
+										vertical-align: sub; float: right;
+									}
+									.ul-type{
+										list-style: none; padding: 30px;
+									}
+									.ul-type li{
+										margin-bottom: 10px;
+									}
+								</style>
+								<ul class="ul-type">
+									<li><label for="type1">减划</label> <input type="checkbox" name="type" id="type1" class="input-type"/></li>
+									<li><label for="type2">模块</label> <input type="checkbox" name="type" id="type2" class="input-type"/></li>
+									<li><label for="type3">卡</label> <input type="checkbox" name="type" id="type3" class="input-type"/></li>
+									<li><label for="type4">CSP模块</label> <input type="checkbox" name="type" id="type4" class="input-type"/></li>
+									<li><label for="type5">CSP卡</label> <input type="checkbox" name="type" id="type5" class="input-type"/></li>
+									<li><label for="type6">COB</label> <input type="checkbox" name="type" id="type6" class="input-type"/></li>
+									<li><label for="type7">其他</label> <input type="checkbox" name="type" id="type7" class="input-type"/></li>
+									
+								</ul>
+							</div>
+							<div style="height: 100px; background-color: white; padding: 10px;">
+								<b>注意事项：</b><br>
+								<span style="font-size: 0.8em;">
+								请先选中合同属性：【量产】或【工程】。工程合同涉及试验与设计费用，量产为直接生产。
+								若贵公司之前没有生产过该类型产品，请选择【工程】。
+								如果选择错误涉及到质量问题由贵公司承担经济责任。然后请在合同模板中添加内容信息最后点击生成按钮。
+								生成订单后可在在线下单列表中审阅，下载合同后盖章上传PDF扫描件，开始进行合作审核。
+								</span>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			
+		</script>
+	</body>
+
+</html>
