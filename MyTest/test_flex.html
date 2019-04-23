@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.flex-container {
+			display: -webkit-flex;
+			display: flex;
+			width: 400px;
+			height: 250px;
+			background-color: lightgrey;
+		}
+
+		.flex-item {
+			background-color: cornflowerblue;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+		}
+
+		.bg {
+			height: 128px;
+			width: 128px;
+			background: url(img/wechat.png), url(img/book.png);
+			background-size: 48px 48px, 100%;
+			background-repeat: no-repeat;
+			background-position: 50px 60px, 0 0;
+		}
+		div[data-tag]{color:red;}
+		div[class='bg']{color:green;}
+	</style>
+</head>
+
+<body>
+	<div class="flex-container">
+		<div class="flex-item">flex item 1</div>
+		<div class="flex-item">flex item 2</div>
+		<div class="flex-item">flex item 3</div>
+	</div>
+	<p>弹性容器样式: "display: -webkit-flex;display: flex;"，弹性容器子元素未设置任何样式</p>
+	<p> 弹性容器外及弹性子元素内是正常渲染的。弹性盒子只定义了弹性子元素如何在弹性容器内布局。
+
+			弹性子元素通常在弹性盒子内一行显示。默认情况每个容器只有一行。</p>
+	<div class="flex-container">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+			<div class="flex-item">flex item 4</div>
+			<div class="flex-item">flex item 5</div>
+		</div>
+	<div style="direction:rtl;">
+		123
+	</div>
+	<div class="bg">
+		多图背景
+	</div>
+	<div data-tag="角标">123</div>
+</body>
+
+</html>
